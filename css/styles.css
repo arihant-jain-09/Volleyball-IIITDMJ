@@ -15,6 +15,14 @@ body {
   margin-top: 2rem;
 }
 
+.u-width-70 {
+  width: 70%;
+}
+
+.u-width-30 {
+  width: 30%;
+}
+
 @font-face {
   font-family: "Gilroy-Light";
   src: url(/fonts/Gilroy-Light.otf);
@@ -224,7 +232,7 @@ main {
           justify-content: center;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
-  padding: 15rem 3rem;
+  padding: 15rem 3rem 17rem 3rem;
 }
 
 @media screen and (max-width: 1000px) {
@@ -233,7 +241,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 8rem 0;
+    padding: 10rem 0 12rem 0;
   }
 }
 
@@ -403,6 +411,7 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
 }
 
 .album__heading {
@@ -427,8 +436,21 @@ main {
   margin-right: 1rem;
 }
 
+.album__images {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.album__images-imagecontainer {
+  width: 100%;
+}
+
 .map {
-  padding: 10rem 10rem;
+  padding: 10rem 3rem;
   margin-top: -20vh;
   background-color: #fee715ff;
   -webkit-transform: skewY(-7deg);
@@ -442,16 +464,27 @@ main {
   display: flex;
   -webkit-transform: skewY(7deg);
           transform: skewY(7deg);
+  width: 100%;
 }
 
-.map__iframe {
-  width: 100%;
-  height: 100%;
+@media screen and (max-width: 1000px) {
+  .map__mapcontainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 
 .map__details {
   margin-left: 5rem;
   padding-top: 5rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .map__details {
+    margin-left: 0;
+  }
 }
 
 .map__detail {
