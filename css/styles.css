@@ -9,7 +9,6 @@ body {
   font-size: 62.5%;
   width: 100%;
   height: 100%;
-  background-color: #101820ff;
 }
 
 .u-margin-2-top {
@@ -166,6 +165,8 @@ main {
 .carousel {
   height: 95vh;
   overflow: hidden;
+  z-index: 100;
+  position: relative;
 }
 
 @media screen and (max-width: 800px) {
@@ -202,29 +203,37 @@ main {
 
 .competitions {
   background-color: #101820ff;
+  max-width: 100%;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  color: #fff;
+  font-size: 0.75rem;
+  font-family: "Gilroy-Light";
+  margin-top: -20vh;
+}
+
+.competitions > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 100%;
-  padding: 7rem 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #fff;
-  font-size: 0.75rem;
-  font-family: "Gilroy-Light";
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
+  padding: 15rem 3rem;
 }
 
 @media screen and (max-width: 1000px) {
-  .competitions {
+  .competitions > * {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding: 5rem 0;
+    padding: 8rem 0;
   }
 }
 
@@ -373,5 +382,98 @@ main {
   text-align: center;
   padding: 1rem 0;
   line-height: 1rem;
+}
+
+.album {
+  max-width: 100%;
+  padding: 10rem 3rem;
+  background-color: #101820ff;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  color: #fee715ff;
+}
+
+.album > * {
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.album__heading {
+  font-size: 1.25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.album__heading::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  left: 0;
+  top: 0;
+  width: 7rem;
+  height: 7rem;
+  background-color: #fee715ff;
+  margin-right: 1rem;
+}
+
+.map {
+  padding: 10rem 10rem;
+  margin-top: -20vh;
+  background-color: #fee715ff;
+  -webkit-transform: skewY(-7deg);
+          transform: skewY(-7deg);
+  max-width: 100%;
+}
+
+.map__mapcontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: skewY(7deg);
+          transform: skewY(7deg);
+}
+
+.map__iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.map__details {
+  margin-left: 5rem;
+  padding-top: 5rem;
+}
+
+.map__detail {
+  margin-left: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map__detail-svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.map__detail-text {
+  font-size: 1rem;
+}
+
+.map__detail:not(:first-child) {
+  margin-top: 2rem;
 }
 /*# sourceMappingURL=styles.css.map */

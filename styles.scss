@@ -8,7 +8,7 @@ body {
   font-size: 62.5%;
   width: 100%;
   height: 100%;
-  background-color: #101820ff;
+  // background-color: #101820ff;
 }
 
 //utitlity
@@ -114,6 +114,8 @@ main {
 .carousel {
   height: 95vh;
   overflow: hidden;
+  z-index: 100;
+  position: relative;
   @media screen and (max-width: 800px) {
     height: 50vh;
   }
@@ -137,19 +139,25 @@ main {
 
 .competitions {
   background-color: #101820ff;
-  display: flex;
   max-width: 100%;
-  padding: 7rem 3rem;
-  align-items: center;
-  justify-content: center;
-  // clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 95vh);
+
+  transform: skewY(-7deg);
   color: #fff;
   font-size: 0.75rem;
   font-family: "Gilroy-Light";
-  @media screen and (max-width: 1000px) {
-    flex-direction: column;
-    padding: 5rem 0;
+  margin-top: -20vh;
+  & > * {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: skewY(7deg);
+    padding: 15rem 3rem;
+    @media screen and (max-width: 1000px) {
+      flex-direction: column;
+      padding: 8rem 0;
+    }
   }
+
   &__container {
     display: flex;
     flex-direction: column;
@@ -273,5 +281,71 @@ main {
     text-align: center;
     padding: 1rem 0;
     line-height: 1rem;
+  }
+}
+//album
+
+.album {
+  max-width: 100%;
+  padding: 10rem 3rem;
+  background-color: #101820ff;
+  transform: skewY(-7deg);
+  color: #fee715ff;
+  & > * {
+    transform: skewY(7deg);
+    display: flex;
+    flex-direction: column;
+  }
+  &__heading {
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    &::before {
+      content: "";
+      position: relative;
+      display: inline-block;
+      left: 0;
+      top: 0;
+      width: 7rem;
+      height: 7rem;
+      background-color: #fee715ff;
+      margin-right: 1rem;
+    }
+  }
+}
+
+//map
+.map {
+  padding: 10rem 10rem;
+  margin-top: -20vh;
+  background-color: #fee715ff;
+  transform: skewY(-7deg);
+  max-width: 100%;
+  &__mapcontainer {
+    display: flex;
+    transform: skewY(7deg);
+  }
+  &__iframe {
+    width: 100%;
+    height: 100%;
+  }
+  &__details {
+    margin-left: 5rem;
+    padding-top: 5rem;
+  }
+  &__detail {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    &-svg {
+      width: 2rem;
+      height: 2rem;
+    }
+    &-text {
+      font-size: 1rem;
+    }
+    &:not(:first-child) {
+      margin-top: 2rem;
+    }
   }
 }
