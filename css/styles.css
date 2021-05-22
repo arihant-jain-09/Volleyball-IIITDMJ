@@ -168,10 +168,22 @@ main {
   overflow: hidden;
 }
 
+@media screen and (max-width: 800px) {
+  .carousel {
+    height: 50vh;
+  }
+}
+
 .carousel__imagecontainer {
   max-width: 100%;
   position: relative;
   height: 95vh;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel__imagecontainer {
+    height: 50vh;
+  }
 }
 
 .carousel__image {
@@ -179,6 +191,13 @@ main {
           clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 95vh);
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .carousel__image {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 45vh);
+            clip-path: polygon(0 0, 100% 0, 100% 35vh, 0 45vh);
+  }
 }
 
 .competitions {
