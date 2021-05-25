@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volleyball</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="./javascript/carousel.js"></script>
+</head>
+<body>
+    <header id="header">
+        <div class="navbar">
+            <div class="navbar__brand">
+                Home
+            </div>
+            <ul class="navbar__list">
+                <li class="navbar__discover">
+                    Discover
+                </li>
+                <li class="navbar__contact">
+                    Contact
+                </li>
+                <li class="navbar__about">
+                    About
+                </li>
+            </ul>
+            <div class="navbar__search">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                        <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                      </svg>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="first">
+            <div class="first__heading">
+                <div class="first__heading-primary">
+                    <span>Unlimited movies, shows, and more.</span>
+                </div>
+                <div class="first__heading-secondary">
+                    Watch anywhere Cancel anytime.
+                </div>
+            </div>
+            <div id="container">
+                <div id="toggleContainer">
+                   <label>Carousel</label>
+                   <div id="toggle">
+                     <div id="outer3">
+                        <div id="slider3"></div>
+                     </div>
+                     <label>Tiles</label>
+                  </div>
+                </div>
+                <div id="galleryView">
+                  <div id="galleryContainer">
+                     <div id="leftView"></div>
+                     <button id="navLeft" class="navBtns"><i class="fas fa-arrow-left fa-3x"></i></button>
+                     <a id="linkTag">
+                        <div id="mainView"></div>
+                     </a>
+                     <div id="rightView"></div>
+                     <button id="navRight" class="navBtns"><i class="fas fa-arrow-right fa-3x"></i></button>
+                  </div>
+                </div>
+                <div id="tilesView">
+                  <div id="tilesContainer"></div>
+                </div>
+              </div>
+            <!-- <div class="container">
+            <div class="carousel" aria-label="Gallery">
+                <ol class="carousel__viewport">
+                  <li id="carousel__slide1"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper">
+                      <a href="#carousel__slide4"
+                         class="carousel__prev">Go to last slide</a>
+                      <a href="#carousel__slide2"
+                         class="carousel__next">Go to next slide</a>
+                    </div>
+                  </li>
+                  <li id="carousel__slide2"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide1"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide3"
+                       class="carousel__next">Go to next slide</a>
+                  </li>
+                  <li id="carousel__slide3"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide2"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide4"
+                       class="carousel__next">Go to next slide</a>
+                  </li>
+                  <li id="carousel__slide4"
+                      tabindex="0"
+                      class="carousel__slide">
+                    <div class="carousel__snapper"></div>
+                    <a href="#carousel__slide3"
+                       class="carousel__prev">Go to previous slide</a>
+                    <a href="#carousel__slide1"
+                       class="carousel__next">Go to first slide</a>
+                  </li>
+                </ol>
+                <aside class="carousel__navigation">
+                  <ol class="carousel__navigation-list">
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide1"
+                         class="carousel__navigation-button">Go to slide 1</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide2"
+                         class="carousel__navigation-button">Go to slide 2</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide3"
+                         class="carousel__navigation-button">Go to slide 3</a>
+                    </li>
+                    <li class="carousel__navigation-item">
+                      <a href="#carousel__slide4"
+                         class="carousel__navigation-button">Go to slide 4</a>
+                    </li>
+                  </ol>
+                </aside>
+              </div>
+            </div> -->
+        </div>
+      
+        <section class="info">
+            <div class="card">
+                <div class="card__first">
+                    <div class="card__image card__first-image">
+
+                    </div>
+                    <div class="card__content card__first-content">
+                        <h4>CORDINATOR</h4>
+                    </div>
+                </div>
+                <div class="card__second">
+                    <div class="card__image card__second-image">
+
+                    </div>
+                    <div class="card__content card__second-content">
+                        <h4>CO-CORDINATOR</h4>
+                    </div>
+                </div>
+                <div class="card__third">
+                    <div class="card__image card__third-image">
+
+                    </div>
+                    <div class="card__content card__third-content">
+                        <h4>PUBLIC</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- <section class="gallery"> 
+            <div class="gallery__images">
+                <img class="gallery__type1" src="./assets/2019_1.JPG" alt="first image">
+                <img class="gallery__type3" src="./assets/2019_3.JPG" alt="3 image">
+                <img class="gallery__type2" src="./assets/2019_2.JPG" alt="2 image">
+                <img class="gallery__type2" src="./assets/2019_4.JPG" alt="4 image">
+                <img class="gallery__type1" src="./assets/2019_5.JPG" alt="5 image">
+                <img class="gallery__type3" src="./assets/2019_6.JPG" alt="6 image">
+            </div>
+
+            <div class="gallery__rightside">
+                <h1 class="moments">MOMENTS</h1>
+            </div> -->
+        <!-- </section> -->
+
+        <section class="album">
+            <div class="album__heading">
+                GUSTO 2K19
+            </div>
+            <div class="album__images">
+                <div class="album__images-row1">
+                    <div class="album__images-first album__pic"></div>
+                    <div class="album__images-second album__pic"></div>
+                </div>
+                <div class="album__images-row2">
+                    <div class="album__images-row2--1">
+                        <div class="album__images-third album__pic"></div>
+                        <div class="album__images-fourth album__pic"></div>
+                    </div>
+                    <div class="album__images-row2--2">
+                        <div class="album__images-fifth album__pic"></div>
+                    </div>
+                </div>
+                <div class="album__images-row3">
+                    <div class="album__images-sixth album__pic"></div>
+                </div>
+                <div class="album__images-row4">
+                    <div class="album__images-seventh album__pic"></div>
+                    <div class="album__images-eight album__pic"></div>
+                    <div class="album__images-nine album__pic"></div>
+                    <div class="album__images-ten album__pic"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
