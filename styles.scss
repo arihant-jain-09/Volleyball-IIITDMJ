@@ -23,6 +23,10 @@ body {
 }
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+  @media only screen and (max-width: 600px) {
+    font-size: 56.25%;
+  }
 }
 @mixin div-same-size-as-background-img($url) {
   background-image: url($url);
@@ -35,6 +39,8 @@ html {
 #header {
   width: 100%;
   background-color: #070d2d;
+  position: fixed;
+  z-index: 10000;
 }
 
 .navbar {
@@ -52,7 +58,7 @@ html {
     justify-content: center;
   }
   &__list {
-    padding-right: 3.5rem;
+    padding-right: 3.25rem;
     list-style: none;
     display: flex;
     align-items: center;
@@ -60,6 +66,9 @@ html {
     // margin-right: auto;
     & > *:not(:last-child) {
       margin-right: 2.5rem;
+    }
+    @media only screen and (max-width: 600px) {
+      padding-right: 0;
     }
   }
   &__search {
@@ -76,7 +85,7 @@ html {
   padding: 2.5rem;
   //   background-image: radial-gradient(#070d2d, rgba(#070d2d, 0.8));
   &__heading {
-    margin-top: 2.5rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -108,7 +117,7 @@ html {
   position: absolute;
 }
 #container {
-  margin-top: 10rem;
+  margin-top: 8rem;
   height: 50vh;
   // width: 100%;
   max-width: 100%;
@@ -276,12 +285,13 @@ html {
   background-color: rgba(#070d2d, 0.95);
   background-color: #070d2d;
   padding: 4rem;
+  padding-bottom: 1rem;
 }
 .card {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 10rem;
+  margin-top: 4rem;
   margin-bottom: 10rem;
   & > *:not(:last-child) {
     margin-right: 3rem;
@@ -416,6 +426,7 @@ html {
   &__heading {
     font-size: 3rem;
     display: flex;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     span {
       display: flex;
@@ -503,5 +514,46 @@ html {
   height: 85vh;
   @media only screen and (min-width: 780px) and (max-width: 1050px) {
     height: 45vh;
+  }
+}
+
+//footer
+footer {
+  text-align: center;
+  color: lightgrey;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  background-color: #212841;
+}
+.container a {
+  color: lightgrey;
+}
+.navbar a {
+  color: #fe5430;
+  text-decoration: none;
+}
+
+//scroll
+
+.scrollup {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 100;
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      height: 6rem;
+      width: 6rem;
+      display: block;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      color: #fe5430;
+    }
   }
 }

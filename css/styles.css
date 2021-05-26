@@ -28,6 +28,13 @@ body {
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 56.25%;
+  }
 }
 
 #header {
@@ -66,7 +73,7 @@ html {
 }
 
 .navbar__list {
-  padding-right: 3.5rem;
+  padding-right: 3.25rem;
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,6 +88,12 @@ html {
 
 .navbar__list > *:not(:last-child) {
   margin-right: 2.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar__list {
+    padding-right: 0;
+  }
 }
 
 .navbar__search {
@@ -565,8 +578,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-bottom: 2rem;
   margin-top: 4rem;
+  margin-bottom: 2rem;
 }
 
 .album__heading span {
@@ -714,24 +727,43 @@ html {
     height: 45vh;
   }
 }
-footer{
+
+footer {
   text-align: center;
-  color :lightgrey;
+  color: lightgrey;
   width: 100%;
   height: auto;
   padding-bottom: 2rem;
   padding-top: 1rem;
   background-color: #212841;
 }
-.container a{
-  color:lightgrey;
+
+.container a {
+  color: lightgrey;
 }
 
-.navbar a{
-  color:#fe5430;
+.navbar a {
+  color: #fe5430;
   text-decoration: none;
 }
-html {
-  scroll-behavior: smooth;
+
+.scrollup {
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  z-index: 100;
+}
+
+.scrollup__link:link, .scrollup__link:visited {
+  text-decoration: none;
+  height: 6rem;
+  width: 6rem;
+  display: block;
+}
+
+.scrollup__link svg {
+  width: 100%;
+  height: 100%;
+  color: #fe5430;
 }
 /*# sourceMappingURL=styles.css.map */
