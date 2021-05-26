@@ -243,7 +243,8 @@ html {
   height: 100%;
   margin: 0 auto;
   border-radius: 4px;
-  background-image: radial-gradient(#212841, #161a37);
+  background-image: -webkit-gradient(linear, right top, left top, from(#070d2d), color-stop(#212841), to(#070d2d));
+  background-image: linear-gradient(270deg, #070d2d, #212841, #070d2d);
   margin: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
