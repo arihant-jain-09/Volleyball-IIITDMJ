@@ -172,6 +172,9 @@ html {
 #galleryView {
   height: 100%;
   margin: 0 auto;
+  border-radius: 4px;
+  background-image: radial-gradient(#212841, #161a37);
+  margin: 2.5rem;
   // max-width: 100%;
   // background: rgb(246, 210, 106);
   // background: linear-gradient(
@@ -183,6 +186,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  @media only screen and (max-width: 600px) {
+    margin: 0.5rem;
+  }
 }
 #mainView {
   height: auto;
@@ -243,6 +249,10 @@ html {
   background-color: transparent;
   cursor: pointer;
   color: white;
+  @media only screen and (max-width: 1024px) {
+    opacity: 0;
+    visibility: hidden;
+  }
   &:hover {
     opacity: 1;
     transition: all 1s;
@@ -393,10 +403,11 @@ html {
 //album
 .album {
   max-width: 100%;
-  padding-left: 18%;
+  padding-left: 13.5%;
   background-color: #070d2d;
   color: #fe5430;
   padding-bottom: 1%;
+  padding-top: 1%;
   &__heading {
     font-size: 3rem;
     display: -webkit-box;

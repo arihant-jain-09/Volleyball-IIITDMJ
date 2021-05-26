@@ -243,6 +243,9 @@ html {
 #galleryView {
   height: 100%;
   margin: 0 auto;
+  border-radius: 4px;
+  background-image: radial-gradient(#212841, #161a37);
+  margin: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -252,6 +255,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  #galleryView {
+    margin: 0.5rem;
+  }
 }
 
 #mainView {
@@ -342,6 +351,13 @@ html {
   background-color: transparent;
   cursor: pointer;
   color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+  .navBtns {
+    opacity: 0;
+    visibility: hidden;
+  }
 }
 
 .navBtns:hover {
@@ -537,10 +553,11 @@ html {
 
 .album {
   max-width: 100%;
-  padding-left: 18%;
+  padding-left: 13.5%;
   background-color: #070d2d;
   color: #fe5430;
   padding-bottom: 1%;
+  padding-top: 1%;
 }
 
 .album__heading {
