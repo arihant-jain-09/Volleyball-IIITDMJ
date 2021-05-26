@@ -1,5 +1,16 @@
 window.onload=function(){
-  
+  scrollup = document.getElementsByClassName('scrollup')[0];
+  scrollup.className = 'scrollup hide';
+var myScrollFunc = function() {
+  var y = window.scrollY;
+  if (y <= 800) {
+    scrollup.className = "scrollup hide"
+  } else {
+    scrollup.className = "scrollup show"
+  }
+};
+
+window.addEventListener("scroll", myScrollFunc);
 // document.getElementById("outer3").addEventListener("click", toggleState3);
 // function toggleState3() {
   // let galleryView = document.getElementById("galleryView")

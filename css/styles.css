@@ -766,4 +766,14 @@ footer {
   height: 100%;
   color: #fe5430;
 }
+
+.hide {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
 /*# sourceMappingURL=styles.css.map */
