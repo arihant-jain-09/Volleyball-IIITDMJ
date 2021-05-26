@@ -118,6 +118,7 @@ html {
   font-size: 4rem;
   margin: 0 auto;
   color: #fff;
+  text-align: center;
 }
 
 .first__heading-secondary {
@@ -146,8 +147,8 @@ html {
 }
 
 #container {
-  margin-top: 2rem;
-  height: 60vh;
+  margin-top: 10rem;
+  height: 50vh;
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -265,7 +266,7 @@ html {
 
 #mainView {
   height: auto;
-  width: 30rem;
+  width: 25rem;
   background-repeat: no-repeat;
   border-radius: 5px;
   background-color: #eb9100;
@@ -284,12 +285,11 @@ html {
 }
 
 #leftView {
-  height: 30rem;
+  height: 25rem;
   width: 8%;
-  opacity: 0.5;
   border-radius: 5px;
-  -webkit-transform: skewy(5deg);
-          transform: skewy(5deg);
+  -webkit-clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+          clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
   -webkit-transform-origin: top right;
           transform-origin: top right;
   background-color: #eb9100;
@@ -302,23 +302,14 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#leftView:hover {
-  opacity: 1;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 #rightView {
-  height: 30rem;
+  height: 25rem;
   width: 8%;
-  opacity: 0.5;
   border-radius: 5px;
-  -webkit-transform: skewy(-5deg);
-          transform: skewy(-5deg);
+  -webkit-clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
+          clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
   -webkit-transform-origin: top left;
           transform-origin: top left;
   background-color: #eb9100;
@@ -331,19 +322,11 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transition: all 1s;
-  transition: all 1s;
-}
-
-#rightView:hover {
-  opacity: 1;
-  -webkit-transition: all 1s;
-  transition: all 1s;
 }
 
 .navBtns {
-  width: 80px;
-  height: 80px;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   border: none;
   position: absolute;
@@ -364,14 +347,25 @@ html {
   opacity: 1;
   -webkit-transition: all 1s;
   transition: all 1s;
+  background-color: #fe5430;
 }
 
 #navLeft {
-  left: 25%;
+  left: 20%;
+}
+
+#navLeft svg {
+  width: 5rem;
+  height: 5rem;
 }
 
 #navRight {
-  right: 25%;
+  right: 20%;
+}
+
+#navRight svg {
+  width: 5rem;
+  height: 5rem;
 }
 
 #linkTag {
@@ -396,6 +390,8 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
 }
 
 .card > *:not(:last-child) {
@@ -426,6 +422,7 @@ html {
   display: inline-block;
   bottom: 0;
   left: 50%;
+  color: #fff;
   text-align: center;
   -webkit-transform: translate(-50%, 100%);
           transform: translate(-50%, 100%);
@@ -564,10 +561,6 @@ html {
   font-size: 3rem;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-bottom: 2rem;
 }
 
@@ -629,7 +622,7 @@ html {
 }
 
 .images img {
-  margin: 0.1%;
+  margin: 0.35%;
   border: 1px solid transparent;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
@@ -656,8 +649,8 @@ html {
 }
 
 .images img:hover {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04);
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
   -webkit-transition: 0.4s;
   transition: 0.4s;
   -webkit-filter: grayscale(0%);

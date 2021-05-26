@@ -87,6 +87,7 @@ html {
       font-size: 4rem;
       margin: 0 auto;
       color: #fff;
+      text-align: center;
     }
     &-secondary {
       margin-top: 1.5rem;
@@ -107,8 +108,8 @@ html {
   position: absolute;
 }
 #container {
-  margin-top: 2rem;
-  height: 60vh;
+  margin-top: 10rem;
+  height: 50vh;
   // width: 100%;
   max-width: 100%;
   box-sizing: border-box;
@@ -192,7 +193,7 @@ html {
 }
 #mainView {
   height: auto;
-  width: 30rem;
+  width: 25rem;
   background-repeat: no-repeat;
   border-radius: 5px;
   background-color: #eb9100;
@@ -206,42 +207,35 @@ html {
   }
 }
 #leftView {
-  height: 30rem;
+  height: 25rem;
   width: 8%;
-  opacity: 0.5;
+  // opacity: 0.5;
   border-radius: 5px;
-  transform: skewy(5deg);
+  // transform: skewy(5deg);
+  clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
+  // clip-path: polygon(0 -5rem, 100% 0, 100% 100%, 0 95%);
   transform-origin: top right;
   background-color: #eb9100;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s;
-  &:hover {
-    opacity: 1;
-    transition: all 1s;
-  }
 }
 #rightView {
-  height: 30rem;
+  height: 25rem;
   width: 8%;
-  opacity: 0.5;
+  // opacity: 0.5;
   border-radius: 5px;
-  transform: skewy(-5deg);
+  // transform: skewy(-5deg);
+  clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
   transform-origin: top left;
   background-color: #eb9100;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 1s;
-  &:hover {
-    opacity: 1;
-    transition: all 1s;
-  }
 }
 .navBtns {
-  width: 80px;
-  height: 80px;
+  width: 7rem;
+  height: 7rem;
   border-radius: 50%;
   border: none;
   position: absolute;
@@ -256,14 +250,22 @@ html {
   &:hover {
     opacity: 1;
     transition: all 1s;
-    // background-color: #fe5430;
+    background-color: #fe5430;
   }
 }
 #navLeft {
-  left: 25%;
+  left: 20%;
+  svg {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 #navRight {
-  right: 25%;
+  right: 20%;
+  svg {
+    width: 5rem;
+    height: 5rem;
+  }
 }
 #linkTag {
   z-index: 1;
@@ -279,6 +281,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
   & > *:not(:last-child) {
     margin-right: 3rem;
   }
@@ -301,6 +305,7 @@ html {
     display: inline-block;
     bottom: 0;
     left: 50%;
+    color: #fff;
     text-align: center;
     transform: translate(-50%, 100%);
     opacity: 0;
@@ -412,8 +417,6 @@ html {
     font-size: 3rem;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    align-items: center;
     margin-bottom: 2rem;
     &::before {
       content: "";
@@ -453,7 +456,7 @@ html {
   }
 }
 .images img {
-  margin: 0.1%;
+  margin: 0.35%;
   border: 1px solid transparent;
   filter: grayscale(100%);
   @media only screen and (max-width: 780px) {
@@ -468,7 +471,7 @@ html {
   }
 }
 .images img:hover {
-  transform: scale(1.04);
+  transform: scale(1.03);
   transition: 0.4s;
   filter: grayscale(0%);
   z-index: 999;

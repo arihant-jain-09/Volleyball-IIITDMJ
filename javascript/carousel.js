@@ -59,14 +59,16 @@ function loadGallery() {
   imageTag.src=imgObject[mainImg];
   imageTag.style.display="block";
   imageTag.style.width="100%";
+  
   // mainView.style.paddingTop=(image-height(" + imgObject[mainImg] + ") / image-width(" + imgObject[mainImg] + "))*100; 
 
   let leftView = document.getElementById("leftView");
   leftView.style.background = "url(" + imgObject[prevImg] + ")";
+  leftView.style.filter="grayscale(20%) brightness(50%) sepia(70%) hue-rotate(-50deg) saturate(500%) contrast(.8)";
   
   let rightView = document.getElementById("rightView");
   rightView.style.background = "url(" + imgObject[nextImg] + ")";
-  
+  rightView.style.filter="grayscale(20%) brightness(50%) sepia(70%) hue-rotate(-50deg) saturate(500%) contrast(.8)";
   // let linkTag = document.getElementById("linkTag")
   // linkTag.href = imgObject[mainImg];
 
