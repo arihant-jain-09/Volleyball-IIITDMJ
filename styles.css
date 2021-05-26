@@ -33,8 +33,6 @@ html {
 #header {
   width: 100%;
   background-color: #070d2d;
-  position: fixed;
-  z-index: 10000;
 }
 
 .navbar {
@@ -96,7 +94,7 @@ html {
 }
 
 .first__heading {
-  margin-top: 6rem;
+  margin-top: 2.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,7 +147,7 @@ html {
 }
 
 #container {
-  margin-top: 8rem;
+  margin-top: 10rem;
   height: 50vh;
   max-width: 100%;
   -webkit-box-sizing: border-box;
@@ -380,7 +378,6 @@ html {
   background-color: rgba(7, 13, 45, 0.95);
   background-color: #070d2d;
   padding: 4rem;
-  padding-bottom: 1rem;
 }
 
 .card {
@@ -393,7 +390,7 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 4rem;
+  margin-top: 10rem;
   margin-bottom: 10rem;
 }
 
@@ -566,7 +563,6 @@ html {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 2rem;
-  margin-top: 4rem;
 }
 
 .album__heading span {
@@ -714,24 +710,9 @@ html {
     height: 45vh;
   }
 }
-footer{
-  text-align: center;
-  color :lightgrey;
+.footer{
   width: 100%;
-  height: auto;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
-  background-color: #212841;
-}
-.container a{
-  color:lightgrey;
-}
-
-.navbar a{
-  color:#fe5430;
-  text-decoration: none;
-}
-html {
-  scroll-behavior: smooth;
+  height: 10rem;
+  background-image: linear-gradient(270deg, #070d2d, #212841, #070d2d);
 }
 /*# sourceMappingURL=styles.css.map */
