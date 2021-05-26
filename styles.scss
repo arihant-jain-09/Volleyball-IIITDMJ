@@ -273,7 +273,7 @@ html {
     margin-right: 3rem;
   }
   @media only screen and (max-width: 780px) {
-    flex-direction: column;
+    // flex-direction: column;
     flex-wrap: wrap;
     & > *:not(:last-child) {
       margin-right: 0;
@@ -309,7 +309,6 @@ html {
       width: 35rem;
       overflow: hidden;
       position: relative;
-      margin: 3%;
       background-color: #fe5430;
       color: WHITE;
     }
