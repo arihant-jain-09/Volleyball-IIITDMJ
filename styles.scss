@@ -18,7 +18,7 @@
 }
 body {
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 0rem;
   font-family: "Lato", sans-serif;
 }
 html {
@@ -711,14 +711,18 @@ html {
 //album
 .album {
   max-width: 100%;
-  padding: 7rem 20rem 3rem 20rem;
+  padding: 7rem 20rem 3rem 14rem;
   background-color: #070d2d;
   color: #fe5430;
   &__heading {
-    font-size: 2rem;
+    font-size: 3rem;
     display: flex;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: -20rem;
+    position: inherit;
+    padding-left: 25%;
+  }
+
     &::before {
       content: "";
       position: relative;
@@ -845,3 +849,4 @@ html {
     }
   }
 }
+
