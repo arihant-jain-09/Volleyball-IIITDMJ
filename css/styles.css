@@ -820,6 +820,7 @@ html {
     flex-wrap: wrap;
     align-content: center;
     align-items: stretch;
+    margin: 0;
   }
   .card__first {
     height: 35rem;
