@@ -203,7 +203,7 @@ html {
   transition: all 1s;
   &:hover {
     transform: scale(1.02);
-    transition: all 1s;
+    transition: all 0.3s;
   }
 }
 #leftView {

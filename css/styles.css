@@ -280,8 +280,8 @@ html {
 #mainView:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 #leftView {
