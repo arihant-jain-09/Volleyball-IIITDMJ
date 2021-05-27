@@ -414,17 +414,6 @@ html {
   margin-right: 3rem;
 }
 
-@media only screen and (max-width: 780px) {
-  .card {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-  .card > *:not(:last-child) {
-    margin-right: 0;
-    margin-bottom: 3rem;
-  }
-}
-
 .card__image {
   height: 100%;
   background-size: cover;
@@ -457,17 +446,6 @@ html {
   background-color: #fe5430;
 }
 
-@media only screen and (max-width: 780px) {
-  .card__first {
-    height: 35rem;
-    width: 35rem;
-    overflow: hidden;
-    position: relative;
-    background-color: #fe5430;
-    color: WHITE;
-  }
-}
-
 .card__first-image {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/image-1.jpg);
   background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/image-1.jpg);
@@ -493,17 +471,6 @@ html {
   overflow: hidden;
   background-color: #fe5430;
   position: relative;
-}
-
-@media only screen and (max-width: 780px) {
-  .card__second {
-    height: 35rem;
-    width: 35rem;
-    overflow: hidden;
-    position: relative;
-    background-color: #fe5430;
-    color: WHITE;
-  }
 }
 
 .card__second-image {
@@ -533,22 +500,17 @@ html {
   overflow: hidden;
 }
 
-@media only screen and (max-width: 780px) {
-  .card__third {
-    height: 35rem;
-    width: 35rem;
-    overflow: hidden;
-    position: relative;
-    background-color: #fe5430;
-    color: WHITE;
-  }
-}
-
 .card__third-image {
   height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/image-3.jpg);
   background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/image-3.jpg);
   background-size: cover;
+}
+
+.card__third-content a:link,
+.card__third-content a:visited {
+  text-decoration: none;
+  color: inherit;
 }
 
 .card__third:hover .card__third-image {
@@ -562,6 +524,109 @@ html {
   visibility: visible;
   -webkit-transform: translate(-50%, -200%);
           transform: translate(-50%, -200%);
+}
+
+@media screen and (max-width: 780px) {
+  .card {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .card > *:not(:last-child) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+  .card__image {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  .card__content {
+    width: 100%;
+    height: 30%;
+    position: unset;
+    display: block;
+    text-align: unset;
+    -webkit-transform: none;
+            transform: none;
+    opacity: 1;
+    visibility: visible;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transition: none;
+    transition: none;
+  }
+  .card__first {
+    height: 40rem;
+    width: 35rem;
+    color: WHITE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__first:hover .card__first-image {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/image-1.jpg);
+    background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/image-1.jpg);
+  }
+  .card__first:hover .card__first-content {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .card__second {
+    height: 40rem;
+    width: 35rem;
+    color: WHITE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__second:hover .card__second-image {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/image-2.jpg);
+    background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/image-2.jpg);
+  }
+  .card__second:hover .card__second-content {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+  .card__third {
+    height: 40rem;
+    width: 35rem;
+    color: WHITE;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card__third:hover .card__third-image {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/image-3.jpg);
+    background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/image-3.jpg);
+  }
+  .card__third:hover .card__third-content {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
 }
 
 .album {
@@ -775,5 +840,57 @@ footer {
 .show {
   opacity: 1;
   visibility: visible;
+}
+
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100000;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transform: all 0.3s;
+          transform: all 0.3s;
+}
+
+.popup:target {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.popup__content {
+  color: orange;
+  width: 75%;
+  height: 60rem;
+  background-color: #fff;
+}
+
+.popup__close-bg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: -1;
+}
+
+.popup:target .popup__close-bg {
+  display: block;
 }
 /*# sourceMappingURL=styles.css.map */
