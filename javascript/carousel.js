@@ -11,51 +11,21 @@ var myScrollFunc = function() {
 };
 
 window.addEventListener("scroll", myScrollFunc);
-// document.getElementById("outer3").addEventListener("click", toggleState3);
-// function toggleState3() {
-  // let galleryView = document.getElementById("galleryView")
-  // let tilesView = document.getElementById("tilesView")
-  // let outer = document.getElementById("outer3");
-  // let slider = document.getElementById("slider3");
-  // let tilesContainer = document.getElementById("tilesContainer");
-  // if (slider.classList.contains("active")) {
-  //   slider.classList.remove("active");
-  //   outer.classList.remove("outerActive");
-  //   galleryView.style.display = "flex";
-  //   tilesView.style.display = "none";
-    
-  //   while (tilesContainer.hasChildNodes()) {
-  //     tilesContainer.removeChild(tilesContainer.firstChild)
-  //     }  
-  // } else {
-  //   slider.classList.add("active");
-  //   outer.classList.add("outerActive");
-  //   galleryView.style.display = "none";
-  //   tilesView.style.display = "flex";
-     
-  //   for (let i = 0; i < imgObject.length - 1; i++) {
-  //     let tileItem = document.createElement("div");
-  //     tileItem.classList.add("tileItem");
-  //     tileItem.style.background =  "url(" + imgObject[i] + ")";
-  //     tileItem.style.backgroundSize = "contain";  
-  //     tileItem.style.backgroundRepeat = "no-repeat"; 
-  //     tilesContainer.appendChild(tileItem);      
-  //   }
-  // };
-// }
 
 let imgObject = [
-  "https://placeimg.com/450/450/any",
+  // "https://placeimg.com/450/450/any",
   "https://placeimg.com/450/450/animals",
-  "https://placeimg.com/450/450/architecture",
-  "https://placeimg.com/450/450/nature",
-  "https://placeimg.com/450/450/people",
-  "https://placeimg.com/450/450/tech",
-  "https://picsum.photos/id/1/450/450",
-  "https://picsum.photos/id/8/450/450",
-  "https://picsum.photos/id/12/450/450",
-  "https://picsum.photos/id/15/450/450",
-  "https://picsum.photos/id/5/450/450",
+  // "https://placeimg.com/450/450/architecture",
+  // "https://placeimg.com/450/450/nature",
+  // "https://placeimg.com/450/450/people",
+  // "https://placeimg.com/450/450/tech",
+  // "https://picsum.photos/id/1/450/450",
+  // "https://picsum.photos/id/8/450/450",
+  // "https://picsum.photos/id/12/450/450",
+  // "https://picsum.photos/id/15/450/450",
+  // "https://picsum.photos/id/5/450/450",
+  "../assets/gusto_equal.webp",
+  "../assets/IMG_1700_equal.webp"
 ];
 
 let mainImg = 0;

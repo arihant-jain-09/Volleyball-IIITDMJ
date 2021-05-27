@@ -561,18 +561,88 @@ html {
 }
 
 //footer
-footer {
+.footer {
   text-align: center;
   color: lightgrey;
   width: 100%;
   height: auto;
-  padding-bottom: 2rem;
-  padding-top: 1rem;
+  padding: 1.5rem 0rem;
   background-color: #212841;
+  @media screen and (max-width: 780px) {
+    padding: 1.5rem 0 0 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media only screen and (max-width: 780px) {
+      flex-direction: column;
+    }
+  }
+  &__navigation {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    display: inline-block;
+    @media screen and (max-width: 780px) {
+      padding-top: 0;
+      padding-bottom: 0rem;
+    }
+  }
+  &__item:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+  &__item {
+    display: inline-block;
+    font-size: 1.2rem;
+  }
+  &__item:hover {
+    transform: scale(1.2);
+    transition: 0.3s;
+  }
+  &__link:hover {
+    color: #fe5430;
+  }
+  &__item a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    &:hover {
+      color: #fe5430;
+    }
+  }
+  &__college {
+    display: inline-block;
+    font-size: 1.2rem;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    margin-right: 7rem;
+    margin-left: 7rem;
+    @media only screen and (max-width: 780px) {
+      margin: auto;
+    }
+    @media screen and (max-width: 780px) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+    }
+  }
 }
+.webdev a {
+  color: white;
+}
+.build {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  @media screen and (max-width: 780px) {
+    padding-top: 0rem;
+  }
+}
+
+///////////////
 .container a {
   color: lightgrey;
 }
+
 .navbar a {
   color: #fe5430;
   text-decoration: none;
