@@ -749,15 +749,15 @@ footer {
 
 .scrollup {
   position: fixed;
-  bottom: 3rem;
+  bottom: 4rem;
   right: 3rem;
   z-index: 100;
 }
 
 .scrollup__link:link, .scrollup__link:visited {
   text-decoration: none;
-  height: 6rem;
-  width: 6rem;
+  height: 4rem;
+  width: 3rem;
   display: block;
 }
 
