@@ -973,6 +973,12 @@ html {
   }
 }
 
+@media screen and (max-width: 400px) {
+  .map__image {
+    width: 100%;
+  }
+}
+
 .map__image-img {
   display: none;
   width: 100%;
