@@ -1341,44 +1341,6 @@ html {
   color: #fff;
 }
 
-.popup__memberlist svg {
-  position: absolute;
-  top: 2.5rem;
-  right: 2.5rem;
-  width: 3rem;
-  height: 3rem;
-  color: #fff;
-  cursor: pointer;
-}
-
-@media screen and (max-width: 900px) {
-  .popup__memberlist svg {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .popup__memberlist svg {
-    width: 2.25rem;
-    height: 2.25rem;
-  }
-}
-
-@media (min-width: 700px) and (max-width: 780px) {
-  .popup__memberlist svg {
-    top: 0.75rem;
-    right: 0.75rem;
-  }
-}
-
-.popup__memberlist svg:target {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-}
-
 @media screen and (max-width: 900px) {
   .popup__memberlist {
     font-size: 1.25rem;
@@ -1403,6 +1365,38 @@ html {
 @media screen and (max-width: 1000px) {
   .popup__content {
     width: 85%;
+  }
+}
+
+.popup__content svg {
+  width: 3rem;
+  height: 3rem;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+  color: #fff;
+  z-index: 10000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .popup__content svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .popup__content svg {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 780px) {
+  .popup__content svg {
+    top: 0.75rem;
+    right: 0.75rem;
   }
 }
 

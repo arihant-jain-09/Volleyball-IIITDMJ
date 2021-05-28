@@ -971,33 +971,6 @@ html {
         color: #fff;
       }
     }
-    svg {
-      position: absolute;
-      top: 2.5rem;
-      right: 2.5rem;
-      width: 3rem;
-      height: 3rem;
-      color: #fff;
-      cursor: pointer;
-      @media screen and (max-width: 900px) {
-        width: 2.5rem;
-        height: 2.5rem;
-      }
-      @media screen and (max-width: 780px) {
-        width: 2.25rem;
-        height: 2.25rem;
-      }
-
-      @media (min-width: 700px) and (max-width: 780px) {
-        top: 0.75rem;
-        right: 0.75rem;
-      }
-      &:target {
-        opacity: 1;
-        visibility: visible;
-        transform: scale(1);
-      }
-    }
     @media screen and (max-width: 900px) {
       font-size: 1.25rem;
     }
@@ -1013,6 +986,28 @@ html {
     position: relative;
     @media screen and (max-width: 1000px) {
       width: 85%;
+    }
+    svg {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      color: #fff;
+      z-index: 10000;
+      cursor: pointer;
+      @media screen and (max-width: 900px) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      @media screen and (max-width: 780px) {
+        width: 2.25rem;
+        height: 2.25rem;
+      }
+      @media (min-width: 700px) and (max-width: 780px) {
+        top: 0.75rem;
+        right: 0.75rem;
+      }
     }
   }
   &__close-bg {
