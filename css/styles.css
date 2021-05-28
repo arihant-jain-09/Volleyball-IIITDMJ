@@ -229,6 +229,11 @@ html {
   position: relative;
 }
 
+#loading-image {
+  width: 10rem;
+  height: 10rem;
+}
+
 #toggle {
   height: 10vh;
   width: 200px;
@@ -455,14 +460,14 @@ html {
 }
 
 .card__first-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/image-1.jpg);
-  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/image-1.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/IMG_1640.webp);
+  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/IMG_1640.webp);
 }
 
 .card__first:hover .card__first-image {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-image: url(../assets/image-1.jpg);
+  -webkit-transform: translateY(-32%);
+          transform: translateY(-32%);
+  background-image: url(../assets/IMG_1640.webp);
 }
 
 .card__first:hover .card__first-content {
@@ -486,14 +491,14 @@ html {
 }
 
 .card__second-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/image-2.jpg);
-  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/image-2.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/IMG_1639.webp);
+  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/IMG_1639.webp);
 }
 
 .card__second:hover .card__second-image {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-image: url(../assets/image-2.jpg);
+  -webkit-transform: translateY(-32%);
+          transform: translateY(-32%);
+  background-image: url(../assets/IMG_1639.webp);
 }
 
 .card__second:hover .card__second-content {
@@ -518,8 +523,8 @@ html {
 
 .card__third-image {
   height: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/image-3.jpg);
-  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/image-3.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/members.webp);
+  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/members.webp);
   background-size: cover;
 }
 
@@ -530,9 +535,9 @@ html {
 }
 
 .card__third:hover .card__third-image {
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-  background-image: url(../assets/image-3.jpg);
+  -webkit-transform: translateY(-32%);
+          transform: translateY(-32%);
+  background-image: url(../assets/members.webp);
 }
 
 .card__third:hover .card__third-content {
@@ -841,13 +846,15 @@ html {
   padding: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  min-height: 10rem;
-}
-
-@media screen and (max-width: 900px) {
-  .map__image {
-    width: 70%;
-  }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .map__image-img {
@@ -867,6 +874,7 @@ html {
   height: 100%;
   background-size: cover;
   display: block;
+  padding: 6rem;
 }
 
 .map__link {
@@ -1162,6 +1170,11 @@ html {
           transform: scale(1);
 }
 
+.popup__member svg {
+  width: 3rem;
+  height: 3rem;
+}
+
 .popup__content {
   color: orange;
   width: 75%;
@@ -1182,7 +1195,7 @@ html {
   display: block;
 }
 
-.area {
+.area-popup {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.75)));
   background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.75));
   position: relative;
