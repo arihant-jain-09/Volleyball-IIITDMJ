@@ -1216,16 +1216,138 @@ html {
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & > *:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
   }
   &__card {
+    position: relative;
     width: 50%;
-    height: 10rem;
-    background-color: #fff;
-    & > *:not(:last-child) {
-      margin-bottom: 3rem;
-    }
+    height: 17rem;
+    overflow: hidden;
     &-first {
+      &::before {
+        background-image: url(../assets/arjun.jpg);
+      }
     }
+    &-second {
+      &::before {
+        background-image: url(../assets/arihant.jpg);
+      }
+    }
+    &-third {
+      &::before {
+        background-image: url(../assets/harshit.jpg);
+      }
+    }
+    &-svgs {
+      position: absolute;
+      top: 0;
+      width: 25%;
+      z-index: 100;
+      background-color: rgba(#070d2d, 0.3);
+      border-radius: 5px;
+      padding: 0.5rem 0 0.25rem 0;
+      & > *:first-child {
+        margin-left: 1rem;
+      }
+      & > *:not(:last-child) {
+        margin-right: 1.25rem;
+      }
+      &--icon {
+        height: 1.75rem;
+        width: 1.75rem;
+        color: #fff;
+      }
+    }
+  }
+  &__card:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-size: cover;
+    filter: grayscale(100%);
+  }
+  &__card:hover::before {
+    filter: none;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 2%;
+    right: 20%;
+    font-size: 5rem;
+    font-weight: 900;
+    color: #fff;
+    z-index: 2;
+  }
+  &__detail {
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 12.5%;
+    writing-mode: vertical-rl;
+    filter: none;
+    &-roll {
+      position: absolute;
+      top: 10%;
+      left: 2%;
+      font-size: 1.25rem;
+      color: #070d2d;
+      z-index: 2;
+    }
+    &-round {
+      position: absolute;
+      bottom: 10%;
+      right: 10%;
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+      // background-color: #fe5430;
+      display: block;
+      &--first {
+        // background-color: #28b485;
+      }
+    }
+
+    &-background {
+      position: absolute;
+      bottom: 12%;
+      right: 12%;
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      // background-image: radial-gradient(#fe5430, rgba(#fe5430, 0.8));
+      transition: all 0.3s ease;
+      &--1 {
+        // background-image: radial-gradient(#06c1ff, #06c1ff);
+        // background-image: radial-gradient(#655b50, #655b50);
+        // background-image: radial-gradient(#5f85db, #5f85db);
+        // background-image: radial-gradient(#ff004d, #ff004d);
+        background-image: radial-gradient(#17b978, #17b978);
+      }
+      &--2 {
+        background-image: radial-gradient(#e42a5b, #e42a5b);
+        // background-image: radial-gradient(#fd5459, #fd5459);
+      }
+      &--3 {
+        background-image: radial-gradient(#185adb, #185adb);
+      }
+    }
+  }
+  &__card:hover &__detail &__detail-background {
+    transform: scale(12);
+  }
+  &__card:hover &__detail &__detail-roll {
+    color: #fff;
   }
   &__close-bg {
     position: absolute;

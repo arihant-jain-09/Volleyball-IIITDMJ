@@ -1666,16 +1666,157 @@ html {
   position: absolute;
   top: 0;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.webdevpopup__cardlist > *:not(:last-child) {
+  margin-bottom: 0.5rem;
 }
 
 .webdevpopup__card {
+  position: relative;
   width: 50%;
-  height: 10rem;
-  background-color: #fff;
+  height: 17rem;
+  overflow: hidden;
 }
 
-.webdevpopup__card > *:not(:last-child) {
-  margin-bottom: 3rem;
+.webdevpopup__card-first::before {
+  background-image: url(../assets/arjun.jpg);
+}
+
+.webdevpopup__card-second::before {
+  background-image: url(../assets/arihant.jpg);
+}
+
+.webdevpopup__card-third::before {
+  background-image: url(../assets/harshit.jpg);
+}
+
+.webdevpopup__card-svgs {
+  position: absolute;
+  top: 0;
+  width: 25%;
+  z-index: 100;
+  background-color: rgba(7, 13, 45, 0.3);
+  border-radius: 5px;
+  padding: 0.5rem 0 0.25rem 0;
+}
+
+.webdevpopup__card-svgs > *:first-child {
+  margin-left: 1rem;
+}
+
+.webdevpopup__card-svgs > *:not(:last-child) {
+  margin-right: 1.25rem;
+}
+
+.webdevpopup__card-svgs--icon {
+  height: 1.75rem;
+  width: 1.75rem;
+  color: #fff;
+}
+
+.webdevpopup__card:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  background-size: cover;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.webdevpopup__card:hover::before {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.webdevpopup__name {
+  position: absolute;
+  bottom: 2%;
+  right: 20%;
+  font-size: 5rem;
+  font-weight: 900;
+  color: #fff;
+  z-index: 2;
+}
+
+.webdevpopup__detail {
+  position: absolute;
+  right: 0;
+  background-color: #fff;
+  height: 100%;
+  width: 12.5%;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-filter: none;
+          filter: none;
+}
+
+.webdevpopup__detail-roll {
+  position: absolute;
+  top: 10%;
+  left: 2%;
+  font-size: 1.25rem;
+  color: #070d2d;
+  z-index: 2;
+}
+
+.webdevpopup__detail-round {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: block;
+}
+
+.webdevpopup__detail-background {
+  position: absolute;
+  bottom: 12%;
+  right: 12%;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.webdevpopup__detail-background--1 {
+  background-image: radial-gradient(#17b978, #17b978);
+}
+
+.webdevpopup__detail-background--2 {
+  background-image: radial-gradient(#e42a5b, #e42a5b);
+}
+
+.webdevpopup__detail-background--3 {
+  background-image: radial-gradient(#185adb, #185adb);
+}
+
+.webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-background {
+  -webkit-transform: scale(12);
+          transform: scale(12);
+}
+
+.webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-roll {
+  color: #fff;
 }
 
 .webdevpopup__close-bg {
