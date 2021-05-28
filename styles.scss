@@ -602,6 +602,9 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
+    @media screen and (max-width: 900px) {
+      width: 70%;
+    }
     // @media screen and (max-width: 900px) {
     //   width: 50%;
     //   min-height: 20rem;

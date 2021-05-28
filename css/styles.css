@@ -857,6 +857,12 @@ html {
           justify-content: center;
 }
 
+@media screen and (max-width: 900px) {
+  .map__image {
+    width: 70%;
+  }
+}
+
 .map__image-img {
   display: none;
   width: 100%;
