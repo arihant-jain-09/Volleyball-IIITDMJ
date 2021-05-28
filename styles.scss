@@ -305,6 +305,15 @@ html {
   & > *:not(:last-child) {
     margin-right: 3rem;
   }
+  &__area-card {
+    background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.75));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+  }
   &__image {
     height: 100%;
     background-size: cover;
@@ -314,8 +323,7 @@ html {
   }
   &__content {
     position: absolute;
-    display: inline-block;
-    bottom: 0;
+    // bottom: 0;
     left: 50%;
     color: #fff;
     text-align: center;
@@ -323,6 +331,12 @@ html {
     opacity: 0;
     visibility: hidden;
     transition: all 0.2s ease-in 0.2s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+      padding-bottom: 1rem;
+    }
   }
   &__first {
     height: 50rem;
@@ -336,6 +350,13 @@ html {
       background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
         url(../assets/IMG_1640.webp);
     }
+    // &-content {
+    //   display: flex;
+    //   flex-direction: column;
+    //   h1 {
+    //     padding-bottom: 1rem;
+    //   }
+    // }
   }
   &__first:hover &__first-image {
     transform: translateY(-32%);
@@ -347,7 +368,7 @@ html {
     transform: translate(-50%, -200%);
   }
 
-  &__first:hover .area-card {
+  &__first:hover &__area-card {
     opacity: 1;
   }
 
@@ -362,6 +383,9 @@ html {
       background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
         url(../assets/IMG_1639.webp);
     }
+    &-content {
+      margin-top: 2.5rem;
+    }
   }
   &__second:hover &__second-image {
     transform: translateY(-32%);
@@ -372,7 +396,7 @@ html {
     visibility: visible;
     transform: translate(-50%, -200%);
   }
-  &__second:hover .area-card {
+  &__second:hover &__area-card {
     opacity: 1;
   }
 
@@ -389,7 +413,21 @@ html {
         url(../assets/members.webp);
       background-size: cover;
     }
+
     &-content {
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      h1 {
+        // margin-bottom: 3rem;
+        // margin-top: 4rem;
+        font-size: 2rem;
+      }
+      svg {
+        width: 3rem;
+        height: 3rem;
+      }
       a:link,
       a:visited {
         text-decoration: none;
@@ -406,7 +444,7 @@ html {
     visibility: visible;
     transform: translate(-50%, -200%);
   }
-  &__third:hover .area-card {
+  &__third:hover &__area-card {
     opacity: 1;
   }
 
@@ -418,6 +456,15 @@ html {
     }
     &__image {
       clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    }
+    &__area-card {
+      background-image: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 1;
     }
     &__content {
       width: 100%;
@@ -439,14 +486,20 @@ html {
       color: WHITE;
       display: flex;
       flex-direction: column;
+      &-image {
+        background-image: url(../assets/IMG_1640.webp);
+      }
     }
     &__first:hover &__first-image {
       transform: translateY(0);
-      background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-        url(../assets/image-1.jpg);
+      // background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
+      //   url(../assets/image-1.jpg);
     }
     &__first:hover &__first-content {
       transform: translate(0);
+    }
+    &__first:hover &__area-card {
+      opacity: unset;
     }
 
     &__second {
@@ -455,11 +508,17 @@ html {
       color: WHITE;
       display: flex;
       flex-direction: column;
+      &-image {
+        background-image: url(../assets/IMG_1639.webp);
+      }
+      &-content {
+        margin-top: 0rem;
+      }
     }
     &__second:hover &__second-image {
       transform: translateY(0);
-      background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-        url(../assets/image-2.jpg);
+      // background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
+      //   url(../assets/image-2.jpg);
     }
     &__second:hover &__second-content {
       transform: translate(0);
@@ -470,11 +529,40 @@ html {
       color: WHITE;
       display: flex;
       flex-direction: column;
+      &-image {
+        background-image: url(../assets/members.webp);
+      }
+
+      &-content {
+        margin-top: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h1 {
+          // margin-bottom: 3rem;
+          // margin-top: 4rem;
+          font-size: 2rem;
+        }
+        span {
+          display: flex;
+          justify-content: center;
+        }
+        svg {
+          width: 3rem;
+          height: 3rem;
+        }
+        a:link,
+        a:visited {
+          text-decoration: none;
+          color: inherit;
+        }
+      }
     }
     &__third:hover &__third-image {
       transform: translateY(0);
-      background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-        url(../assets/image-3.jpg);
+      // background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
+      //   url(../assets/image-3.jpg);
     }
     &__third:hover &__third-content {
       transform: translate(0);
@@ -842,9 +930,41 @@ html {
     transform: scale(1);
   }
   &__member {
-    svg {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    transition: all 0.3s;
+    & > *:not(:last-child) {
+      margin-right: 0.5rem;
+    }
+    img {
       width: 3rem;
       height: 3rem;
+      color: #fff;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  &__memberlist {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: table-cell;
+    // flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    columns: 3;
+    padding: 3rem;
+    font-size: 1.5rem;
+    a {
+      &:link,
+      &:visited {
+        text-decoration: none;
+        color: #fff;
+      }
     }
   }
   &__content {
@@ -852,6 +972,7 @@ html {
     width: 75%;
     height: 60rem;
     background-color: #fff;
+    position: relative;
   }
   &__close-bg {
     position: absolute;
@@ -874,15 +995,6 @@ html {
   // left: 0;
   width: 100%;
   height: 100%;
-}
-.area-card {
-  background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.75));
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
 }
 
 .circles {
