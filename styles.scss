@@ -205,7 +205,7 @@ html {
   width: 25rem;
   background-repeat: no-repeat;
   border-radius: 5px;
-  background-color: #eb9100;
+  background-color: transparent;
   margin-left: 10px;
   margin-right: 10px;
   z-index: 1;
@@ -224,7 +224,7 @@ html {
   clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 95%);
   // clip-path: polygon(0 -5rem, 100% 0, 100% 100%, 0 95%);
   transform-origin: top right;
-  background-color: #eb9100;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -237,7 +237,7 @@ html {
   // transform: skewy(-5deg);
   clip-path: polygon(0 0, 100% 5%, 100% 95%, 0 100%);
   transform-origin: top left;
-  background-color: #eb9100;
+  background-color: transparent;
   display: flex;
   justify-content: center;
   align-items: center;

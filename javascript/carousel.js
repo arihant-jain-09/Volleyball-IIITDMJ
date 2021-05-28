@@ -1,6 +1,7 @@
 window.onload=function(){
   scrollup = document.getElementsByClassName('scrollup')[0];
   scrollup.className = 'scrollup hide';
+  document.getElementById("loading").style.display = "none" 
 var myScrollFunc = function() {
   var y = window.scrollY;
   if (y <= 800) {
