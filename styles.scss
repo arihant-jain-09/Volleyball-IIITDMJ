@@ -882,7 +882,7 @@ html {
 .scrollup {
   position: fixed;
   bottom: 4rem;
-  right: 3rem;
+  right: 2.5rem;
   z-index: 100;
   &__link {
     &:link,
@@ -1022,7 +1022,16 @@ html {
     display: block;
   }
 }
-
+.webdev-area-popup {
+  // background-image: linear-gradient(#070d2d, #212841);
+  background-image: linear-gradient(270deg, #070d2d, #212841, #070d2d);
+  // background-image: linear-gradient(#070d2d, rgba(#070d2d, 0.75));
+  position: relative;
+  // top: 0;
+  // left: 0;
+  width: 100%;
+  height: 100%;
+}
 .area-popup {
   // background-image: linear-gradient(#070d2d, #212841);
   background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.75));
@@ -1139,5 +1148,88 @@ html {
     transform: translateY(-1000px) rotate(720deg);
     opacity: 0;
     border-radius: 50%;
+  }
+}
+
+//web dev
+.webdevpopup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 100000;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.9);
+  transform: all 0.3s;
+  &:target {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+  }
+  &__content {
+    color: orange;
+    width: 75%;
+    height: 60rem;
+    background-color: #fff;
+    position: relative;
+    @media screen and (max-width: 1000px) {
+      width: 85%;
+    }
+    svg {
+      width: 3rem;
+      height: 3rem;
+      position: absolute;
+      right: 2rem;
+      top: 2rem;
+      color: #fff;
+      z-index: 10000;
+      cursor: pointer;
+      @media screen and (max-width: 900px) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+      @media screen and (max-width: 780px) {
+        width: 2.25rem;
+        height: 2.25rem;
+      }
+      @media (min-width: 700px) and (max-width: 780px) {
+        top: 0.75rem;
+        right: 0.75rem;
+      }
+    }
+  }
+  &__cardlist {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__card {
+    width: 50%;
+    height: 10rem;
+    background-color: #fff;
+    & > *:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+    &-first {
+    }
+  }
+  &__close-bg {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: -1;
+  }
+  &:target &__close-bg {
+    display: block;
   }
 }

@@ -182,7 +182,11 @@
             <div class="map__image">
                 <img class="map__loading" src="./assets/Wedges-3s-200px.svg" alt="Loading...">
                 <a href="https://goo.gl/maps/A885BG4hakUKgg7V7" target="_blank">
-                    <img class="map__image-img" src="./assets/map.png" alt="map">
+                    <picture>
+                        <source media="(max-width: 780px)" srcset="./assets/map_small.png">
+                        <source media="(min-width: 780px)" srcset="./assets/map.png">
+                        <img class="map__image-img" src="./assets/map.png" alt="map">
+                    </picture>
                 </a>
             </div>
             <div class="map__content">
@@ -246,7 +250,7 @@
                 <span>IIITDM JABALPUR - VOLLEYBALL CLUB</span>
               </div>
               <div class="footer__item build">
-                Build by <a href="#" class="webdev footer__link">WEB DEV TEAM</a>
+                Build by <a href="#webdev" class="webdev footer__link">WEB DEV TEAM</a>
               </div>
             </div> 
         </footer>
@@ -304,7 +308,7 @@
                     <div class='popup__member popup__member-1'><img src='./assets/mail.svg' alt='mail'><a href='mailto:20BCS162@iiitdmj.ac.in ' >Prashant Chauhan</a></div>
                     <div class='popup__member popup__member-1'><img src='./assets/mail.svg' alt='mail'><a href='mailto:20BDS060@iiitdmj.ac.in ' >Vibhooti Sharma</a></div>
                     <div class='popup__member popup__member-1'><img src='./assets/mail.svg' alt='mail'><a href='mailto:20BDS029@iiitdmj.ac.in ' >Priya Sarsaiya</a></div>
-                    <div class='popup__member popup__member-1'><img src='./assets/mail.svg' alt='mail'><a href='mailto:20BCS089 @iiitdmj.ac.in ' >Godavarthi Hemanvitha </a></div>
+                    <div class='popup__member popup__member-1'><img src='./assets/mail.svg' alt='mail'><a href='mailto:20BCS089@iiitdmj.ac.in ' >Godavarthi Hemanvitha </a></div>
                     <div class='popup__member popup__member-1'><img src='./assets/mail.svg' alt='mail'><a href='mailto:20MECM06@iiitdmj.ac.in ' >Priyanka Gupta</a></div>
                     <div class='popup__member popup__member-1'><img src='./assets/mail.svg' alt='mail'><a href='mailto:2019509@iiitdmj.ac.in ' >Nenavath Nihar Naik</a></div>
                     <div class='popup__member popup__member-1'><img src='./assets/mail.svg' alt='mail'><a href='mailto:2019171@iiitdmj.ac.in ' >VasuKumar Kotadiya</a></div>
@@ -324,6 +328,41 @@
                 <path fill-rule="evenodd" d="M4.293 15.707a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414 0zm0-6a1 1 0 010-1.414l5-5a1 1 0 011.414 0l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
               </svg></a>
         </div>
+        <section id="webdev" class="webdevpopup">
+                <a href="#footer" class="webdevpopup__close-bg"></a>
+                <div class="webdevpopup__content">
+                    <a href="#footer">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd" />
+                          </svg>
+                    </a> 
+                        <div class="webdev-area-popup" >
+                            <ul class="circles">
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                            </ul>
+                        </div >
+                        <div class="webdevpopup__cardlist">
+                            <div class="webdevpopup__card-first webdevpopup__card">
+                                
+                            </div>
+                            <div class="webdevpopup__card-second webdevpopup__card">
+
+                            </div>
+                            <div class="webdevpopup__card-third webdevpopup__card">
+
+                            </div>
+                        </div>
+                    </div>
+        </section>
     </main>
 </body>
 </html>
