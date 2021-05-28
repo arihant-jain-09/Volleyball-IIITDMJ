@@ -2,6 +2,11 @@ window.onload=function(){
   scrollup = document.getElementsByClassName('scrollup')[0];
   scrollup.className = 'scrollup hide';
   document.getElementById("loading").style.display = "none" 
+  let mainView = document.getElementById("mainView");
+  mainView.style.display="block"
+  document.getElementById("navRight").style.display="block"
+  document.getElementById("navLeft").style.display="block"
+
 var myScrollFunc = function() {
   var y = window.scrollY;
   if (y <= 800) {
@@ -34,8 +39,6 @@ let prevImg = imgObject.length - 1;
 let nextImg = 1;
 
 function loadGallery() {
-
-  let mainView = document.getElementById("mainView");
   // mainView.style.background = "url(" + imgObject[mainImg] + ")";
   let imageTag=document.getElementById("imageTag");
   imageTag.src=imgObject[mainImg];
@@ -45,10 +48,12 @@ function loadGallery() {
   // mainView.style.paddingTop=(image-height(" + imgObject[mainImg] + ") / image-width(" + imgObject[mainImg] + "))*100; 
 
   let leftView = document.getElementById("leftView");
+  leftView.style.display="block"
   leftView.style.background = "url(" + imgObject[prevImg] + ")";
   leftView.style.filter="grayscale(20%) brightness(50%) sepia(70%) hue-rotate(-50deg) saturate(500%) contrast(.8)";
   
   let rightView = document.getElementById("rightView");
+  rightView.style.display="block"
   rightView.style.background = "url(" + imgObject[nextImg] + ")";
   rightView.style.filter="grayscale(20%) brightness(50%) sepia(70%) hue-rotate(-50deg) saturate(500%) contrast(.8)";
   // let linkTag = document.getElementById("linkTag")

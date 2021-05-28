@@ -210,6 +210,7 @@ html {
   margin-right: 10px;
   z-index: 1;
   transition: all 1s;
+  display: none;
   &:hover {
     transform: scale(1.02);
     transition: all 0.3s;
@@ -228,6 +229,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 #rightView {
   height: 25rem;
@@ -241,6 +243,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 .navBtns {
   width: 7rem;
@@ -264,6 +267,7 @@ html {
 }
 #navLeft {
   left: 20%;
+  display: none;
   svg {
     width: 5rem;
     height: 5rem;
@@ -271,6 +275,7 @@ html {
 }
 #navRight {
   right: 20%;
+  display: none;
   svg {
     width: 5rem;
     height: 5rem;

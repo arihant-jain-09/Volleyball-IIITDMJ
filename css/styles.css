@@ -290,6 +290,7 @@ html {
   z-index: 1;
   -webkit-transition: all 1s;
   transition: all 1s;
+  display: none;
 }
 
 #mainView:hover {
@@ -317,6 +318,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 
 #rightView {
@@ -337,6 +339,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: none;
 }
 
 .navBtns {
@@ -367,6 +370,7 @@ html {
 
 #navLeft {
   left: 20%;
+  display: none;
 }
 
 #navLeft svg {
@@ -376,6 +380,7 @@ html {
 
 #navRight {
   right: 20%;
+  display: none;
 }
 
 #navRight svg {
