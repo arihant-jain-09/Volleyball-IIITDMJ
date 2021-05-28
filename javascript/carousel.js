@@ -2,11 +2,12 @@ window.onload=function(){
   scrollup = document.getElementsByClassName('scrollup')[0];
   scrollup.className = 'scrollup hide';
   document.getElementById("loading").style.display = "none" 
+  document.getElementsByClassName("map__loading")[0].style.display="none"
   let mainView = document.getElementById("mainView");
   mainView.style.display="block"
   document.getElementById("navRight").style.display="block"
   document.getElementById("navLeft").style.display="block"
-
+  document.getElementsByClassName("map__image-img")[0].style.display="block"
 var myScrollFunc = function() {
   var y = window.scrollY;
   if (y <= 800) {

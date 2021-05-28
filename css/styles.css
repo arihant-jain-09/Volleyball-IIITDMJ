@@ -425,6 +425,7 @@ html {
   background-blend-mode: screen;
   -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
+  z-index: 1;
 }
 
 .card__content {
@@ -449,6 +450,8 @@ html {
   overflow: hidden;
   position: relative;
   background-color: #fe5430;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 
 .card__first-image {
@@ -467,6 +470,10 @@ html {
   visibility: visible;
   -webkit-transform: translate(-50%, -200%);
           transform: translate(-50%, -200%);
+}
+
+.card__first:hover .area-card {
+  opacity: 1;
 }
 
 .card__second {
@@ -494,6 +501,10 @@ html {
   visibility: visible;
   -webkit-transform: translate(-50%, -200%);
           transform: translate(-50%, -200%);
+}
+
+.card__second:hover .area-card {
+  opacity: 1;
 }
 
 .card__third {
@@ -529,6 +540,10 @@ html {
   visibility: visible;
   -webkit-transform: translate(-50%, -200%);
           transform: translate(-50%, -200%);
+}
+
+.card__third:hover .area-card {
+  opacity: 1;
 }
 
 @media screen and (max-width: 780px) {
@@ -826,6 +841,7 @@ html {
   padding: 1rem;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  min-height: 10rem;
 }
 
 @media screen and (max-width: 900px) {
@@ -834,7 +850,8 @@ html {
   }
 }
 
-.map__image img {
+.map__image-img {
+  display: none;
   width: 100%;
   height: 100%;
   background-size: cover;
@@ -843,6 +860,13 @@ html {
 .map__image:hover {
   -webkit-transform: scale(1.02);
           transform: scale(1.02);
+}
+
+.map__loading {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: block;
 }
 
 .map__link {
@@ -1156,5 +1180,165 @@ html {
 
 .popup:target .popup__close-bg {
   display: block;
+}
+
+.area {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.75)));
+  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.75));
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.area-card {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.75)));
+  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.75));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  -webkit-animation: animate 25s linear infinite;
+          animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 12s;
+          animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 18s;
+          animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 7s;
+          animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation-delay: 15s;
+          animation-delay: 15s;
+  -webkit-animation-duration: 45s;
+          animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  -webkit-animation-duration: 35s;
+          animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  -webkit-animation-delay: 0s;
+          animation-delay: 0s;
+  -webkit-animation-duration: 11s;
+          animation-duration: 11s;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px) rotate(720deg);
+            transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: translateY(0) rotate(0deg);
+            transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    -webkit-transform: translateY(-1000px) rotate(720deg);
+            transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
