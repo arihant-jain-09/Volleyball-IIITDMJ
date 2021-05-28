@@ -1303,6 +1303,13 @@ html {
   color: #fff;
 }
 
+@media screen and (max-width: 800px) {
+  .popup__member img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
 .popup__member:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
@@ -1312,13 +1319,20 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  display: table-cell;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 100%;
   height: 100%;
   overflow-y: auto;
-  -webkit-columns: 3;
-          columns: 3;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   padding: 3rem;
+  padding-right: 6rem;
   font-size: 1.5rem;
 }
 
@@ -1327,12 +1341,69 @@ html {
   color: #fff;
 }
 
+.popup__memberlist svg {
+  position: absolute;
+  top: 2.5rem;
+  right: 2.5rem;
+  width: 3rem;
+  height: 3rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .popup__memberlist svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .popup__memberlist svg {
+    width: 2.25rem;
+    height: 2.25rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 780px) {
+  .popup__memberlist svg {
+    top: 0.75rem;
+    right: 0.75rem;
+  }
+}
+
+.popup__memberlist svg:target {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+@media screen and (max-width: 900px) {
+  .popup__memberlist {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .popup__memberlist {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+
 .popup__content {
   color: orange;
   width: 75%;
   height: 60rem;
   background-color: #fff;
   position: relative;
+}
+
+@media screen and (max-width: 1000px) {
+  .popup__content {
+    width: 85%;
+  }
 }
 
 .popup__close-bg {
