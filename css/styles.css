@@ -967,6 +967,12 @@ html {
   }
 }
 
+@media screen and (max-width: 780px) {
+  .map__image {
+    width: 85%;
+  }
+}
+
 .map__image-img {
   display: none;
   width: 100%;
