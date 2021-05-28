@@ -24,8 +24,8 @@ let imgObject = [
   // "https://picsum.photos/id/12/450/450",
   // "https://picsum.photos/id/15/450/450",
   // "https://picsum.photos/id/5/450/450",
-  "../assets/gusto_equal.webp",
-  "../assets/IMG_1700_equal.webp"
+  "./assets/gusto_equal.webp",
+  "./assets/IMG_1700_equal.webp"
 ];
 
 let mainImg = 0;
