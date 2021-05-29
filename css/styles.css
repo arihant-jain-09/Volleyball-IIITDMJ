@@ -97,8 +97,8 @@ html {
 }
 
 .navbar__search {
-  width: 1.75rem;
-  height: 1.75rem;
+  width: 2.5rem;
+  height: 2.5rem;
 }
 
 .first {
@@ -126,19 +126,28 @@ html {
 }
 
 .first__heading-primary {
+  font-family: "Permanent Marker", cursive;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 32rem;
-  font-size: 4rem;
+  width: 45rem;
+  font-size: 5rem;
   margin: 0 auto;
   color: #fff;
   text-align: center;
 }
 
+@media screen and (max-width: 400px) {
+  .first__heading-primary {
+    font-size: 4rem;
+    width: 35rem;
+  }
+}
+
 .first__heading-secondary {
   margin-top: 1.5rem;
   font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
 }
 
 #toggleContainer {
@@ -413,14 +422,17 @@ html {
 }
 
 .aboutus {
-  padding: 2rem 6rem 2rem 13%;
+  padding: 2rem 6rem 8rem 13%;
   font-size: 1.4rem;
+  line-height: 18px;
   margin-bottom: 2rem;
+  letter-spacing: 0.8px;
 }
 
 @media screen and (max-width: 780px) {
   .aboutus {
     font-size: 1.6rem;
+    letter-spacing: unset;
   }
 }
 
@@ -476,6 +488,10 @@ html {
   transition: none;
 }
 
+.ach_cards__content h2 {
+  margin-top: 1rem;
+}
+
 .ach_cards__first {
   height: 22rem;
   width: 22rem;
@@ -494,13 +510,13 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .ach_cards__first:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .ach_cards__first-image {
@@ -553,13 +569,13 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fe5430;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .ach_cards__second:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .ach_cards__second-image {
@@ -608,13 +624,13 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   background-color: #fe5430;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .ach_cards__third:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
 }
 
 .ach_cards__third-image {
@@ -622,7 +638,7 @@ html {
 }
 
 .ach_cards__third-content {
-  margin-top: 0rem;
+  margin-top: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1206,7 +1222,7 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10rem 10rem;
+  padding: 10rem 10rem 8rem 10rem;
   background-color: #070d2d;
 }
 

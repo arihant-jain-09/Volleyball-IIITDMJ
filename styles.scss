@@ -72,8 +72,8 @@ html {
     }
   }
   &__search {
-    width: 1.75rem;
-    height: 1.75rem;
+    width: 2.5rem;
+    height: 2.5rem;
   }
 }
 
@@ -91,16 +91,23 @@ html {
     align-items: center;
     justify-content: center;
     &-primary {
+      font-family: "Permanent Marker", cursive;
       display: flex;
-      width: 32rem;
-      font-size: 4rem;
+      width: 45rem;
+      // width: 32rem;
+      font-size: 5rem;
       margin: 0 auto;
       color: #fff;
       text-align: center;
+      @media screen and (max-width: 400px) {
+        font-size: 4rem;
+        width: 35rem;
+      }
     }
     &-secondary {
       margin-top: 1.5rem;
       font-size: 1.5rem;
+      font-family: "Montserrat", sans-serif;
     }
   }
 }
@@ -300,11 +307,14 @@ html {
   }
 }
 .aboutus {
-  padding: 2rem 6rem 2rem 13%;
+  padding: 2rem 6rem 8rem 13%;
   font-size: 1.4rem;
+  line-height: 18px;
   margin-bottom: 2rem;
+  letter-spacing: 0.8px;
   @media screen and (max-width: 780px) {
     font-size: 1.6rem;
+    letter-spacing: unset;
   }
 }
 .ach_cards {
@@ -334,6 +344,9 @@ html {
     align-items: center;
     justify-content: center;
     transition: none;
+    h2 {
+      margin-top: 1rem;
+    }
   }
   &__first {
     height: 22rem;
@@ -344,9 +357,9 @@ html {
     background-color: #fe5430;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease-in;
     &:hover {
       transform: scale(1.1);
-      transition: 0.3s;
     }
     &-image {
       background-color: #fe5430;
@@ -380,9 +393,9 @@ html {
     display: flex;
     flex-direction: column;
     background-color: #fe5430;
+    transition: all 0.3s ease-in;
     &:hover {
       transform: scale(1.1);
-      transition: 0.3s;
     }
     &-image {
       background-color: #fe5430;
@@ -411,16 +424,16 @@ html {
     display: flex;
     flex-direction: column;
     background-color: #fe5430;
+    transition: all 0.3s ease-in;
     &:hover {
       transform: scale(1.1);
-      transition: 0.3s;
     }
     &-image {
       background-color: #fe5430;
     }
 
     &-content {
-      margin-top: 0rem;
+      margin-top: 1rem;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -838,7 +851,7 @@ html {
 //map
 .map {
   display: flex;
-  padding: 10rem 10rem;
+  padding: 10rem 10rem 8rem 10rem;
   background-color: #070d2d;
   @media screen and (max-width: 900px) {
     flex-direction: column;
