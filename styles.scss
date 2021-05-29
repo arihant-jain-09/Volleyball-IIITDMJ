@@ -348,7 +348,7 @@ html {
     backface-visibility: hidden;
     &-image {
       background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-        url(../assets/IMG_1640.webp);
+        url(../assets/coordinator.webp);
     }
     // &-content {
     //   display: flex;
@@ -360,7 +360,7 @@ html {
   }
   &__first:hover &__first-image {
     transform: translateY(-32%);
-    background-image: url(../assets/IMG_1640.webp);
+    background-image: url(../assets/coordinator.webp);
   }
   &__first:hover &__first-content {
     opacity: 1;
@@ -487,12 +487,12 @@ html {
       display: flex;
       flex-direction: column;
       &-image {
-        background-image: url(../assets/IMG_1640_phone.webp);
+        background-image: url(../assets/coordinator_phone.webp);
       }
     }
     &__first:hover &__first-image {
       transform: translateY(0);
-      background-image: url(../assets/IMG_1640_phone.webp);
+      background-image: url(../assets/coordinator_phone.webp);
     }
     &__first:hover &__first-content {
       transform: translate(0);
@@ -528,7 +528,7 @@ html {
       display: flex;
       flex-direction: column;
       &-image {
-        background-image: url(../assets/members.webp);
+        background-image: url(../assets/members_phone.webp);
       }
 
       &-content {
@@ -559,6 +559,7 @@ html {
     }
     &__third:hover &__third-image {
       transform: translateY(0);
+      background-image: url(../assets/members_phone.webp);
       // background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
       //   url(../assets/image-3.jpg);
     }

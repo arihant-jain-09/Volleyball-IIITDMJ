@@ -483,14 +483,14 @@ html {
 }
 
 .card__first-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/IMG_1640.webp);
-  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/IMG_1640.webp);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/coordinator.webp);
+  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/coordinator.webp);
 }
 
 .card__first:hover .card__first-image {
   -webkit-transform: translateY(-32%);
           transform: translateY(-32%);
-  background-image: url(../assets/IMG_1640.webp);
+  background-image: url(../assets/coordinator.webp);
 }
 
 .card__first:hover .card__first-content {
@@ -658,12 +658,12 @@ html {
             flex-direction: column;
   }
   .card__first-image {
-    background-image: url(../assets/IMG_1640_phone.webp);
+    background-image: url(../assets/coordinator_phone.webp);
   }
   .card__first:hover .card__first-image {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    background-image: url(../assets/IMG_1640_phone.webp);
+    background-image: url(../assets/coordinator_phone.webp);
   }
   .card__first:hover .card__first-content {
     -webkit-transform: translate(0);
@@ -712,7 +712,7 @@ html {
             flex-direction: column;
   }
   .card__third-image {
-    background-image: url(../assets/members.webp);
+    background-image: url(../assets/members_phone.webp);
   }
   .card__third-content {
     margin-top: 2rem;
@@ -753,6 +753,7 @@ html {
   .card__third:hover .card__third-image {
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    background-image: url(../assets/members_phone.webp);
   }
   .card__third:hover .card__third-content {
     -webkit-transform: translate(0);
