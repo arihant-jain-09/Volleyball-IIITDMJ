@@ -59,6 +59,12 @@ html {
   font-size: 1.5rem;
 }
 
+@media screen and (max-width: 400px) {
+  .navbar {
+    padding: 1.5rem;
+  }
+}
+
 .navbar__brand {
   display: inline-block;
   display: -webkit-box;
@@ -137,10 +143,24 @@ html {
   text-align: center;
 }
 
+@media screen and (max-width: 450px) {
+  .first__heading-primary {
+    width: 40rem;
+    font-size: 4rem;
+  }
+}
+
 @media screen and (max-width: 400px) {
   .first__heading-primary {
-    font-size: 4rem;
     width: 35rem;
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .first__heading-primary {
+    width: 30rem;
+    font-size: 3.5rem;
   }
 }
 
