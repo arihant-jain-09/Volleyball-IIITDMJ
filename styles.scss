@@ -1229,6 +1229,12 @@ html {
     width: 50%;
     height: 17rem;
     overflow: hidden;
+    @media screen and (max-width:750px){
+      width:70%;
+    }
+    @media screen and (max-width:450px){
+      width:75%;
+    }
     &-first {
       &::before {
         background-image: url(../assets/arjun.jpg);
@@ -1252,16 +1258,32 @@ html {
       background-color: rgba(#070d2d, 0.3);
       border-radius: 5px;
       padding: 0.5rem 0 0.25rem 0;
+      @media screen and (max-width:500px) {
+        width:28%;
+      }
       & > *:first-child {
         margin-left: 1rem;
+        @media screen and (max-width:800px) {
+          margin-left: 0.5rem;
+        }
       }
       & > *:not(:last-child) {
         margin-right: 1.25rem;
+        @media screen and (max-width:810px) {
+          margin-right: 0.8rem;
+        }
+        @media screen and (max-width:420px) {
+          margin-right: 0.4rem;
+        }
       }
       &--icon {
         height: 1.75rem;
         width: 1.75rem;
         color: #fff;
+        @media screen and (max-width:900px) {
+          height: 1.5rem;
+          width: 1.5rem; 
+        }
       }
     }
   }
@@ -1287,6 +1309,18 @@ html {
     font-weight: 900;
     color: #fff;
     z-index: 2;
+    @media screen and (max-width:550px) {
+      font-size: 4.5rem;
+      right: 15%;
+    }
+    @media screen and (max-width:420px) {
+      font-size: 4.25rem;
+      right: 15%;
+    }
+    @media screen and (max-width:350px) {
+      font-size: 4rem;
+      right: 15%;
+    }
   }
   &__detail {
     position: absolute;
