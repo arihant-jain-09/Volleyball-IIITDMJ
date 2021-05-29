@@ -1259,7 +1259,7 @@ html {
       border-radius: 5px;
       padding: 0.5rem 0 0.25rem 0;
       @media screen and (max-width:500px) {
-        width:28%;
+        width:29%;
       }
       & > *:first-child {
         margin-left: 1rem;
@@ -1361,6 +1361,14 @@ html {
       height: 3rem;
       // background-image: radial-gradient(#fe5430, rgba(#fe5430, 0.8));
       transition: all 0.3s ease;
+      @media screen and (max-width:500px){
+        bottom: 18%;
+        right: 10%;
+      }
+      @media screen and (max-width:430px){
+        bottom: 19%;
+        right: 5%;
+      }
       &--1 {
         // background-image: radial-gradient(#06c1ff, #06c1ff);
         // background-image: radial-gradient(#655b50, #655b50);
@@ -1379,6 +1387,18 @@ html {
   }
   &__card:hover &__detail &__detail-background {
     transform: scale(12);
+    @media screen and (max-width:900px) and (min-width:750px) {
+      transform: scale(10);
+    }
+    @media screen and (max-width:650px){
+      transform: scale(10);
+    }
+    @media screen and (max-width:500px){
+      transform: scale(8.4);
+    }
+    @media screen and (max-width:430px){
+      transform: scale(8.3);
+    }
   }
   &__card:hover &__detail &__detail-roll {
     color: #fff;

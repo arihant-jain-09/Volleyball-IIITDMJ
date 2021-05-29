@@ -1728,7 +1728,7 @@ html {
 
 @media screen and (max-width: 500px) {
   .webdevpopup__card-svgs {
-    width: 28%;
+    width: 29%;
   }
 }
 
@@ -1862,6 +1862,20 @@ html {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 500px) {
+  .webdevpopup__detail-background {
+    bottom: 18%;
+    right: 10%;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .webdevpopup__detail-background {
+    bottom: 19%;
+    right: 5%;
+  }
+}
+
 .webdevpopup__detail-background--1 {
   background-image: radial-gradient(#17b978, #17b978);
 }
@@ -1877,6 +1891,34 @@ html {
 .webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-background {
   -webkit-transform: scale(12);
           transform: scale(12);
+}
+
+@media screen and (max-width: 900px) and (min-width: 750px) {
+  .webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-background {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-background {
+    -webkit-transform: scale(10);
+            transform: scale(10);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-background {
+    -webkit-transform: scale(8.4);
+            transform: scale(8.4);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-background {
+    -webkit-transform: scale(8.3);
+            transform: scale(8.3);
+  }
 }
 
 .webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-roll {
