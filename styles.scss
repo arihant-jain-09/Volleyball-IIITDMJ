@@ -487,13 +487,12 @@ html {
       display: flex;
       flex-direction: column;
       &-image {
-        background-image: url(../assets/IMG_1640.webp);
+        background-image: url(../assets/IMG_1640_phone.webp);
       }
     }
     &__first:hover &__first-image {
       transform: translateY(0);
-      // background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-      //   url(../assets/image-1.jpg);
+      background-image: url(../assets/IMG_1640_phone.webp);
     }
     &__first:hover &__first-content {
       transform: translate(0);
@@ -509,7 +508,7 @@ html {
       display: flex;
       flex-direction: column;
       &-image {
-        background-image: url(../assets/IMG_1639.webp);
+        background-image: url(../assets/IMG_1639_phone.webp);
       }
       &-content {
         margin-top: 0rem;
@@ -517,8 +516,7 @@ html {
     }
     &__second:hover &__second-image {
       transform: translateY(0);
-      // background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-      //   url(../assets/image-2.jpg);
+      background-image: url(../assets/IMG_1639_phone.webp);
     }
     &__second:hover &__second-content {
       transform: translate(0);
@@ -1229,11 +1227,11 @@ html {
     width: 50%;
     height: 17rem;
     overflow: hidden;
-    @media screen and (max-width:750px){
-      width:70%;
+    @media screen and (max-width: 750px) {
+      width: 70%;
     }
-    @media screen and (max-width:450px){
-      width:75%;
+    @media screen and (max-width: 450px) {
+      width: 75%;
     }
     &-first {
       &::before {
@@ -1258,21 +1256,21 @@ html {
       background-color: rgba(#070d2d, 0.3);
       border-radius: 5px;
       padding: 0.5rem 0 0.25rem 0;
-      @media screen and (max-width:500px) {
-        width:29%;
+      @media screen and (max-width: 500px) {
+        width: 29%;
       }
       & > *:first-child {
         margin-left: 1rem;
-        @media screen and (max-width:800px) {
+        @media screen and (max-width: 800px) {
           margin-left: 0.5rem;
         }
       }
       & > *:not(:last-child) {
         margin-right: 1.25rem;
-        @media screen and (max-width:810px) {
+        @media screen and (max-width: 810px) {
           margin-right: 0.8rem;
         }
-        @media screen and (max-width:420px) {
+        @media screen and (max-width: 420px) {
           margin-right: 0.4rem;
         }
       }
@@ -1280,9 +1278,9 @@ html {
         height: 1.75rem;
         width: 1.75rem;
         color: #fff;
-        @media screen and (max-width:900px) {
+        @media screen and (max-width: 900px) {
           height: 1.5rem;
-          width: 1.5rem; 
+          width: 1.5rem;
         }
       }
     }
@@ -1309,15 +1307,15 @@ html {
     font-weight: 900;
     color: #fff;
     z-index: 2;
-    @media screen and (max-width:550px) {
+    @media screen and (max-width: 550px) {
       font-size: 4.5rem;
       right: 15%;
     }
-    @media screen and (max-width:420px) {
+    @media screen and (max-width: 420px) {
       font-size: 4.25rem;
       right: 15%;
     }
-    @media screen and (max-width:350px) {
+    @media screen and (max-width: 350px) {
       font-size: 4rem;
       right: 15%;
     }
@@ -1361,11 +1359,11 @@ html {
       height: 3rem;
       // background-image: radial-gradient(#fe5430, rgba(#fe5430, 0.8));
       transition: all 0.3s ease;
-      @media screen and (max-width:500px){
+      @media screen and (max-width: 500px) {
         bottom: 18%;
         right: 10%;
       }
-      @media screen and (max-width:430px){
+      @media screen and (max-width: 430px) {
         bottom: 19%;
         right: 5%;
       }
@@ -1387,16 +1385,16 @@ html {
   }
   &__card:hover &__detail &__detail-background {
     transform: scale(12);
-    @media screen and (max-width:900px) and (min-width:750px) {
+    @media screen and (max-width: 900px) and (min-width: 750px) {
       transform: scale(10);
     }
-    @media screen and (max-width:650px){
+    @media screen and (max-width: 650px) {
       transform: scale(10);
     }
-    @media screen and (max-width:500px){
+    @media screen and (max-width: 500px) {
       transform: scale(8.4);
     }
-    @media screen and (max-width:430px){
+    @media screen and (max-width: 430px) {
       transform: scale(8.3);
     }
   }
