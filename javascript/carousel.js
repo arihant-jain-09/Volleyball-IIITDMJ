@@ -21,7 +21,7 @@ window.addEventListener("scroll", myScrollFunc);
 
 let imgObject = [
   // "https://placeimg.com/450/450/any",
-  "https://placeimg.com/450/450/animals",
+  // "https://placeimg.com/450/450/animals",
   // "https://placeimg.com/450/450/architecture",
   // "https://placeimg.com/450/450/nature",
   // "https://placeimg.com/450/450/people",
@@ -31,6 +31,10 @@ let imgObject = [
   // "https://picsum.photos/id/12/450/450",
   // "https://picsum.photos/id/15/450/450",
   // "https://picsum.photos/id/5/450/450",
+  "./assets/volley.webp",
+  "./assets/dmitry.webp",
+  "./assets/micasa.webp",
+  "./assets/medal.webp",
   "./assets/gusto_equal.webp",
   "./assets/IMG_1700_equal.webp"
 ];
