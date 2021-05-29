@@ -1349,11 +1349,35 @@ html {
   opacity: 0;
   visibility: hidden;
   transform: scale(0.9);
-  transform: all 0.3s;
+  transition: all 0.3s;
   &:target {
     opacity: 1;
     visibility: visible;
     transform: scale(1);
+  }
+  &__devteam {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 10%;
+    // background-color: #fff;
+    color: #fe5430;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size: 6rem;
+    font-family: "Permanent Marker";
+    letter-spacing: 2px;
+    @media screen and (max-width: 750px) {
+      left: 2.5%;
+      font-size: 4rem;
+      letter-spacing: unset;
+    }
+    @media screen and (max-width: 450px) {
+      left: 1%;
+      font-size: 3.5rem;
+      top: 22.5%;
+      letter-spacing: unset;
+    }
   }
   &__content {
     color: orange;

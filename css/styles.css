@@ -1899,8 +1899,8 @@ html {
   visibility: hidden;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  -webkit-transform: all 0.3s;
-          transform: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .webdevpopup:target {
@@ -1908,6 +1908,39 @@ html {
   visibility: visible;
   -webkit-transform: scale(1);
           transform: scale(1);
+}
+
+.webdevpopup__devteam {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 10%;
+  color: #fe5430;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  font-size: 6rem;
+  font-family: "Permanent Marker";
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 750px) {
+  .webdevpopup__devteam {
+    left: 2.5%;
+    font-size: 4rem;
+    letter-spacing: unset;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .webdevpopup__devteam {
+    left: 1%;
+    font-size: 3.5rem;
+    top: 22.5%;
+    letter-spacing: unset;
+  }
 }
 
 .webdevpopup__content {
