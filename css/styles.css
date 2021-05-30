@@ -836,8 +836,8 @@ html {
 }
 
 .card__second-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/pawan.jpg);
-  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/pawan.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/pawan.webp);
+  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/pawan.webp);
 }
 
 .card__second-content {
@@ -847,7 +847,7 @@ html {
 .card__second:hover .card__second-image {
   -webkit-transform: translateY(-32%);
           transform: translateY(-32%);
-  background-image: url(../assets/pawan.jpg);
+  background-image: url(../assets/pawan.webp);
 }
 
 .card__second:hover .card__second-content {
@@ -1007,7 +1007,7 @@ html {
             flex-direction: column;
   }
   .card__second-image {
-    background-image: url(../assets/pawan_phone.jpg);
+    background-image: url(../assets/pawan_phone.webp);
   }
   .card__second-content {
     margin-top: 0rem;
@@ -1015,7 +1015,7 @@ html {
   .card__second:hover .card__second-image {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    background-image: url(../assets/pawan_phone.jpg);
+    background-image: url(../assets/pawan_phone.webp);
   }
   .card__second:hover .card__second-content {
     -webkit-transform: translate(0);

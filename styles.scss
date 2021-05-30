@@ -581,7 +581,7 @@ html {
     position: relative;
     &-image {
       background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-        url(../assets/pawan.jpg);
+        url(../assets/pawan.webp);
     }
     &-content {
       margin-top: 2.5rem;
@@ -589,7 +589,7 @@ html {
   }
   &__second:hover &__second-image {
     transform: translateY(-32%);
-    background-image: url(../assets/pawan.jpg);
+    background-image: url(../assets/pawan.webp);
   }
   &__second:hover &__second-content {
     opacity: 1;
@@ -708,7 +708,7 @@ html {
       display: flex;
       flex-direction: column;
       &-image {
-        background-image: url(../assets/pawan_phone.jpg);
+        background-image: url(../assets/pawan_phone.webp);
       }
       &-content {
         margin-top: 0rem;
@@ -716,7 +716,7 @@ html {
     }
     &__second:hover &__second-image {
       transform: translateY(0);
-      background-image: url(../assets/pawan_phone.jpg);
+      background-image: url(../assets/pawan_phone.webp);
     }
     &__second:hover &__second-content {
       transform: translate(0);
