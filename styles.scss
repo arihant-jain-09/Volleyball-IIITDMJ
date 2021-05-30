@@ -549,7 +549,7 @@ html {
     backface-visibility: hidden;
     &-image {
       background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-        url(../assets/coordinator.webp);
+        url(../assets/saikiran.webp);
     }
     // &-content {
     //   display: flex;
@@ -561,7 +561,7 @@ html {
   }
   &__first:hover &__first-image {
     transform: translateY(-32%);
-    background-image: url(../assets/coordinator.webp);
+    background-image: url(../assets/saikiran.webp);
   }
   &__first:hover &__first-content {
     opacity: 1;
@@ -688,12 +688,12 @@ html {
       display: flex;
       flex-direction: column;
       &-image {
-        background-image: url(../assets/coordinator_phone.webp);
+        background-image: url(../assets/saikiran_phone.webp);
       }
     }
     &__first:hover &__first-image {
       transform: translateY(0);
-      background-image: url(../assets/coordinator_phone.webp);
+      background-image: url(../assets/saikiran_phone.webp);
     }
     &__first:hover &__first-content {
       transform: translate(0);

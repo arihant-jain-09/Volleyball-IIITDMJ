@@ -805,14 +805,14 @@ html {
 }
 
 .card__first-image {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/coordinator.webp);
-  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/coordinator.webp);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#fe5430), to(rgba(254, 84, 48, 0.5))), url(../assets/saikiran.webp);
+  background-image: linear-gradient(#fe5430, rgba(254, 84, 48, 0.5)), url(../assets/saikiran.webp);
 }
 
 .card__first:hover .card__first-image {
   -webkit-transform: translateY(-32%);
           transform: translateY(-32%);
-  background-image: url(../assets/coordinator.webp);
+  background-image: url(../assets/saikiran.webp);
 }
 
 .card__first:hover .card__first-content {
@@ -980,12 +980,12 @@ html {
             flex-direction: column;
   }
   .card__first-image {
-    background-image: url(../assets/coordinator_phone.webp);
+    background-image: url(../assets/saikiran_phone.webp);
   }
   .card__first:hover .card__first-image {
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    background-image: url(../assets/coordinator_phone.webp);
+    background-image: url(../assets/saikiran_phone.webp);
   }
   .card__first:hover .card__first-content {
     -webkit-transform: translate(0);
