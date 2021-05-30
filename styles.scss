@@ -94,7 +94,14 @@ html {
     align-items: center;
     justify-content: center;
     &-primary {
-      font-family: "Permanent Marker", cursive;
+      // font-family: "Train One", cursive;
+      // font-family: "Averia Libre", cursive;
+      // font-family: "Josefin Sans", sans-serif;
+      // font-family: "Oswald", sans-serif;
+      // font-family: "Merienda", cursive;
+      font-family: "Viga", sans-serif;
+      // font-family: "Permanent Marker", cursive;
+      letter-spacing: 0.15rem;
       display: flex;
       width: 45rem;
       // width: 32rem;
@@ -1478,8 +1485,8 @@ html {
     }
     &-third {
       &::before {
-        background-image: url(../assets/harshit.jpg);
-        // background-image: url(../assets/harshit.jpg);
+        transform: scaleX(-1);
+        background-image: url(../assets/harshit.webp);
       }
     }
     &-svgs {
@@ -1619,7 +1626,10 @@ html {
         // background-image: radial-gradient(#fd5459, #fd5459);
       }
       &--3 {
-        background-image: radial-gradient(#185adb, #185adb);
+        // background-image: radial-gradient(#fd8c04, #fd8c04);
+        background-image: radial-gradient(#fc8621, #fdb827);
+        // background-image: radial-gradient(#fdb827, #fdb827);
+        // background-image: radial-gradient(#185adb, #185adb);
       }
     }
   }

@@ -132,7 +132,8 @@ html {
 }
 
 .first__heading-primary {
-  font-family: "Permanent Marker", cursive;
+  font-family: "Viga", sans-serif;
+  letter-spacing: 0.15rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2097,7 +2098,9 @@ html {
 }
 
 .webdevpopup__card-third::before {
-  background-image: url(../assets/harshit.jpg);
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-image: url(../assets/harshit.webp);
 }
 
 .webdevpopup__card-svgs {
@@ -2277,7 +2280,7 @@ html {
 }
 
 .webdevpopup__detail-background--3 {
-  background-image: radial-gradient(#185adb, #185adb);
+  background-image: radial-gradient(#fc8621, #fdb827);
 }
 
 .webdevpopup__card:hover .webdevpopup__detail .webdevpopup__detail-background {
