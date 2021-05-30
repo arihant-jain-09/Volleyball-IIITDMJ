@@ -146,14 +146,14 @@ html {
 @media screen and (max-width: 450px) {
   .first__heading-primary {
     width: 40rem;
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
 }
 
 @media screen and (max-width: 400px) {
   .first__heading-primary {
     width: 35rem;
-    font-size: 3.5rem;
+    font-size: 4rem;
   }
 }
 
@@ -191,11 +191,17 @@ html {
 }
 
 #container {
-  margin-top: 6rem;
+  margin-top: 8rem;
   height: 50vh;
   max-width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  #container {
+    margin-top: 6rem;
+  }
 }
 
 #tilesContainer {
