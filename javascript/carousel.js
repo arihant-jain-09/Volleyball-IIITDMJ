@@ -32,6 +32,7 @@ let imgObject = [
   // "https://picsum.photos/id/15/450/450",
   // "https://picsum.photos/id/5/450/450",
   // "./assets/volley.webp",
+  "./assets/volleycourt.webp",
   "./assets/dmitry.webp",
   "./assets/micasa.webp",
   "./assets/medal.webp",

@@ -453,6 +453,7 @@ html {
   .aboutus {
     font-size: 1.6rem;
     letter-spacing: unset;
+    padding: 2rem 1rem 8rem 13%;
   }
 }
 
@@ -474,6 +475,7 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .ach_cards > *:not(:last-child) {
@@ -1425,7 +1427,7 @@ html {
   color: lightgrey;
   width: 100%;
   height: auto;
-  padding: 1.5rem 0rem;
+  padding: 1rem 0rem 1.5rem 0;
   background-image: -webkit-gradient(linear, right top, left top, from(#070d2d), color-stop(#212841), to(#070d2d));
   background-image: linear-gradient(270deg, #070d2d, #212841, #070d2d);
 }
@@ -1433,6 +1435,33 @@ html {
 @media screen and (max-width: 780px) {
   .footer {
     padding: 1.5rem 0 0 0;
+  }
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__social > *:not(:last-child) {
+  margin-right: 1.75rem;
+}
+
+.footer__social-svg {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+
+@media screen and (max-width: 780px) {
+  .footer__social {
+    padding-bottom: 1rem;
   }
 }
 
@@ -1597,8 +1626,8 @@ html {
   visibility: hidden;
   -webkit-transform: scale(0.9);
           transform: scale(0.9);
-  -webkit-transform: all 0.3s;
-          transform: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .popup:target {
@@ -2054,11 +2083,11 @@ html {
 }
 
 .webdevpopup__card-first::before {
-  background-image: url(../assets/arjun.jpg);
+  background-image: url(../assets/arjun.webp);
 }
 
 .webdevpopup__card-second::before {
-  background-image: url(../assets/arihant.jpg);
+  background-image: url(../assets/arihant.webp);
 }
 
 .webdevpopup__card-third::before {
@@ -2141,10 +2170,10 @@ html {
   position: absolute;
   bottom: 2%;
   right: 20%;
-  font-size: 5rem;
   font-weight: 900;
   color: #fff;
   z-index: 2;
+  font-size: 6rem;
 }
 
 @media screen and (max-width: 550px) {
