@@ -318,12 +318,11 @@ html {
   box-sizing: border-box;
 }
 .achievements {
-  // height: 50rem;
   background-color: rgba(#070d2d, 0.95);
   background-color: #070d2d;
   color: #fff;
-  padding: 3rem;
-  @media screen and (max-width: 780px) {
+  padding: 1rem 3rem 3rem 3rem;
+  @media screen and (max-width: 779px) {
     padding: 4rem;
   }
 }
@@ -333,7 +332,7 @@ html {
   line-height: 18px;
   margin-bottom: 2rem;
   letter-spacing: 0.8px;
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 779px) {
     font-size: 1.6rem;
     letter-spacing: unset;
     padding: 2rem 1rem 8rem 13%;
@@ -481,7 +480,7 @@ html {
       }
     }
   }
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 779px) {
     flex-direction: column;
     padding: auto;
     & > *:not(:last-child) {
@@ -549,7 +548,7 @@ html {
     backface-visibility: hidden;
     &-image {
       background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-        url(../assets/saikiran.webp);
+        url(../assets/coordinator.webp);
     }
     // &-content {
     //   display: flex;
@@ -561,7 +560,7 @@ html {
   }
   &__first:hover &__first-image {
     transform: translateY(-32%);
-    background-image: url(../assets/saikiran.webp);
+    background-image: url(../assets/coordinator.webp);
   }
   &__first:hover &__first-content {
     opacity: 1;
@@ -582,7 +581,7 @@ html {
     position: relative;
     &-image {
       background-image: linear-gradient(#fe5430, rgba(#fe5430, 0.5)),
-        url(../assets/IMG_1639.webp);
+        url(../assets/pawan.jpg);
     }
     &-content {
       margin-top: 2.5rem;
@@ -590,7 +589,7 @@ html {
   }
   &__second:hover &__second-image {
     transform: translateY(-32%);
-    background-image: url(../assets/IMG_1639.webp);
+    background-image: url(../assets/pawan.jpg);
   }
   &__second:hover &__second-content {
     opacity: 1;
@@ -649,7 +648,7 @@ html {
     opacity: 1;
   }
 
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 779px) {
     flex-wrap: wrap;
     & > *:not(:last-child) {
       margin-right: 0;
@@ -688,12 +687,12 @@ html {
       display: flex;
       flex-direction: column;
       &-image {
-        background-image: url(../assets/saikiran_phone.webp);
+        background-image: url(../assets/coordinator_phone.webp);
       }
     }
     &__first:hover &__first-image {
       transform: translateY(0);
-      background-image: url(../assets/saikiran_phone.webp);
+      background-image: url(../assets/coordinator_phone.webp);
     }
     &__first:hover &__first-content {
       transform: translate(0);
@@ -709,7 +708,7 @@ html {
       display: flex;
       flex-direction: column;
       &-image {
-        background-image: url(../assets/IMG_1639_phone.webp);
+        background-image: url(../assets/pawan_phone.jpg);
       }
       &-content {
         margin-top: 0rem;
@@ -717,7 +716,7 @@ html {
     }
     &__second:hover &__second-image {
       transform: translateY(0);
-      background-image: url(../assets/IMG_1639_phone.webp);
+      background-image: url(../assets/pawan_phone.jpg);
     }
     &__second:hover &__second-content {
       transform: translate(0);
@@ -806,7 +805,7 @@ html {
   justify-content: center;
   text-align: center;
   padding: 2%;
-  @media only screen and (max-width: 780px) {
+  @media only screen and (max-width: 779px) {
     flex-direction: column;
     width: 100%;
   }
@@ -814,12 +813,12 @@ html {
 .images {
   width: 80%;
   align-items: center;
-  @media only screen and (max-width: 780px) {
+  @media only screen and (max-width: 779px) {
     width: 85%;
     margin: auto;
     padding: inherit;
   }
-  @media only screen and (min-width: 780px) and (max-width: 1050px) {
+  @media only screen and (min-width: 779px) and (max-width: 1050px) {
     width: 80%;
   }
 }
@@ -827,7 +826,7 @@ html {
   margin: 0.35%;
   border: 1px solid transparent;
   filter: grayscale(100%);
-  @media only screen and (max-width: 780px) {
+  @media only screen and (max-width: 779px) {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -844,7 +843,7 @@ html {
   filter: grayscale(0%);
   z-index: 999;
   position: relative;
-  @media only screen and (max-width: 780px) {
+  @media only screen and (max-width: 779px) {
     transform: none;
     filter: none;
   }
@@ -852,21 +851,21 @@ html {
 .type1 {
   width: 57%;
   height: 55vh;
-  @media only screen and (min-width: 780px) and (max-width: 1050px) {
+  @media only screen and (min-width: 779px) and (max-width: 1050px) {
     height: 35vh;
   }
 }
 .type2 {
   width: 38%;
   height: 55vh;
-  @media only screen and (min-width: 780px) and (max-width: 1050px) {
+  @media only screen and (min-width: 779px) and (max-width: 1050px) {
     height: 35vh;
   }
 }
 .type3 {
   width: 96%;
   height: 85vh;
-  @media only screen and (min-width: 780px) and (max-width: 1050px) {
+  @media only screen and (min-width: 779px) and (max-width: 1050px) {
     height: 45vh;
   }
 }
@@ -893,7 +892,7 @@ html {
     @media screen and (max-width: 900px) {
       width: 70%;
     }
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 779px) {
       width: 85%;
     }
     @media screen and (max-width: 400px) {
@@ -1003,7 +1002,7 @@ html {
   padding: 1rem 0rem 1.5rem 0;
   // background-color: #212841;
   background-image: linear-gradient(270deg, #070d2d, #212841, #070d2d);
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 779px) {
     padding: 1.5rem 0 0 0;
   }
   &__social {
@@ -1017,7 +1016,7 @@ html {
       width: 2.25rem;
       height: 2.25rem;
     }
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 779px) {
       padding-bottom: 1rem;
     }
   }
@@ -1025,7 +1024,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: 779px) {
       flex-direction: column;
     }
   }
@@ -1033,7 +1032,7 @@ html {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     display: inline-block;
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 779px) {
       padding-top: 0;
       padding-bottom: 0rem;
     }
@@ -1067,10 +1066,10 @@ html {
     padding-bottom: 1.5rem;
     margin-right: 7rem;
     margin-left: 7rem;
-    @media only screen and (max-width: 780px) {
+    @media only screen and (max-width: 779px) {
       margin: auto;
     }
-    @media screen and (max-width: 780px) {
+    @media screen and (max-width: 779px) {
       padding-top: 1.5rem;
       padding-bottom: 1.5rem;
     }
@@ -1082,7 +1081,7 @@ html {
 .build {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  @media screen and (max-width: 780px) {
+  @media screen and (max-width: 779px) {
     padding-top: 0rem;
   }
 }
@@ -1220,11 +1219,11 @@ html {
         width: 2.5rem;
         height: 2.5rem;
       }
-      @media screen and (max-width: 780px) {
+      @media screen and (max-width: 779px) {
         width: 2.25rem;
         height: 2.25rem;
       }
-      @media (min-width: 700px) and (max-width: 780px) {
+      @media (min-width: 700px) and (max-width: 779px) {
         top: 0.75rem;
         right: 0.75rem;
       }
@@ -1438,11 +1437,11 @@ html {
         width: 2.5rem;
         height: 2.5rem;
       }
-      @media screen and (max-width: 780px) {
+      @media screen and (max-width: 779px) {
         width: 2.25rem;
         height: 2.25rem;
       }
-      @media (min-width: 700px) and (max-width: 780px) {
+      @media (min-width: 700px) and (max-width: 779px) {
         top: 0.75rem;
         right: 0.75rem;
       }
