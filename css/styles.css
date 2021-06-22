@@ -1334,6 +1334,7 @@ html {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-bottom: auto;
+  margin-bottom: 0;
 }
 
 .map__link:link, .map__link:visited {
